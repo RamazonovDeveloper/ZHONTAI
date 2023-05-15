@@ -37,19 +37,19 @@ export default function Slider() {
             <div className='relative w-full h-[100vh]'>
               <img src={ferrariImg} className='absolute h-[100vh] object-cover' alt="" />
               {/*  className='slider_an_text' */}
-              <div className='my_card_text absolute top-[85%] w-full text-center text-white main_card_shadow'>
+              <div className='my_card_text absolute top-[85%] w-full text-center h-1/3 text-white main_card_shadow'>
                 <h2><span className='text-[50px]'>Start your engine</span></h2>
                 <p><span className='text-[40px]'>Lorem ipsum dolor sit amet, consectetur adipisicing.</span></p>
               </div>
             </div>
           </SwiperSlide>
           <SwiperSlide>
-            <div className='relative'>
-              <img src={ferrariImg2} className='object-cover' alt="" />
+            <div className='relative w-full h-[100vh]'>
+              <img src={ferrariImg2} className='absolute h-[100vh] object-cover' alt="" />
               {/*  className='slider_an_text' */}
-              <div className='my_card_text absolute z-40 top-[50%] left-0 w-full text-center text-white main_card_shadow'>
+              <div className='my_card_text absolute top-[85%] w-full text-center h-1/3 text-white main_card_shadow'>
                 <h2><span className='text-[50px]'>Start your engine</span></h2>
-                <p><span className='text-[40px]'>Lorem ipsum dolor sit amet.</span></p>
+                <p><span className='text-[40px]'>Lorem ipsum dolor sit amet, consectetur adipisicing.</span></p>
               </div>
             </div>
           </SwiperSlide>

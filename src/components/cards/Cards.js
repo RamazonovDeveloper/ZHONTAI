@@ -21,19 +21,23 @@ export default function Cards() {
 
   tl.to(".my_card_img2", { left:'0%', duration: 1.6, opacity: 1})
 
+  const handleClick = () => {
+    console.log("Image has been clicked");
+  }
+
   return (
     <div className='w-[100%] overflow-hidden'>
       <div className='h-[100vh] bg-slate-500 grid grid-cols-2 '>
-        <div className='h-full bg-slate-800 relative'>
-          <img data-aos="fade-right" className='absolute h-full object-cover' src={ferrariImg} alt="" />
-          <div className='absolute text-white top-[70%] text-center text-[40px] w-full cards_shadow'>
+        <div className='h-full bg-slate-800 relative my_card_image'>
+          <img data-aos="fade-right" className='absolute h-full object-cover z-10' src={ferrariImg} onClick={() => handleClick()} alt="" />
+          <div className='absolute z-20 text-white top-[70%] text-center text-[40px] w-full cards_shadow'>
             <p data-aos="fade-up">Lorem ipsum dolor sit amet.</p>
           </div>
         </div>
 
-        <div className='h-full bg-slate-800 relative'>
-          <img data-aos="fade-left" className='absolute h-full object-cover z-0' src={ferrariImg2} alt="" />
-          <div className='absolute top-[70%] text-white text-center text-[40px] w-full cards_shadow'>
+        <div className='h-full bg-slate-800 relative my_card_image'>
+          <img data-aos="fade-left" className='absolute h-full object-cover z-10' src={ferrariImg2} alt="" onClick={() => handleClick()}/>
+          <div className='absolute z-20 top-[70%] text-white text-center text-[40px] w-full cards_shadow'>
             <p data-aos="fade-up">Lorem ipsum dolor sit amet.</p>
           </div>
         </div>

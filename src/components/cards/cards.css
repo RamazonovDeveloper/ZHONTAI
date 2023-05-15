@@ -9,10 +9,18 @@
 }
 
 @keyframes example {
-    100% {transform: translateY(-100px);opacity: 1;}
+    100% {transform: translateY(-100px); opacity: 1;}
     0% {transform: translateY(50px); opacity: 0;}
 }
 
-/* .cards_shadow{
+.cards_shadow{
     background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%,rgba(0, 0, 0, .2) 25%, rgba(0, 0, 0, 0.4) 50%, rgba(0, 0, 0, 0.2) 80%, rgba(0, 0, 0, 0.1) 90%, rgba(0, 0, 0, 0) 100%);
-} */
+}
+
+.my_card_image{
+    transition: 4s ease-in-out;
+}
+
+.my_card_image:hover{
+    transform: scale(1.05, 1.05);
+}
