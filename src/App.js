@@ -22,6 +22,7 @@ import Slider from './components/slider/Slider';
 import Cards from './components/cards/Cards';
 import Text_slider from './components/text_slider/Text_slider';
 import Navbar from './components/navbar/Navbar';
+import Footer from './components/footer/Footer';
 
 function App() {
 
@@ -137,6 +138,10 @@ function App() {
 
             {/* SECTION CARDS */}
             <Cards/>
+
+
+            {/* FOOTER */}
+            <Footer />
 
           </div>
       }

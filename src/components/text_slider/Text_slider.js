@@ -10,6 +10,8 @@ import { Pagination, Autoplay, Navigation } from "swiper";
 import ferrariImg from '../../assets/697316.jpeg'
 import ferrariImg2 from '../../assets/758296.jpg'
 
+import { HiArrowLongRight } from 'react-icons/hi2'
+
 import './text_slider.css'
 
 export default function Text_slider() {
@@ -53,15 +55,22 @@ export default function Text_slider() {
             clickable:true
             }}
             navigation={true}
-            
-            modules={[Pagination, Navigation]}
+            autoplay={{
+                delay: 2500,
+                disableOnInteraction: false,
+            }}
+            modules={[Pagination, Navigation, Autoplay]}
         >
             <SwiperSlide className='h-full'>
             <div className='mySwiper grid h-3/5 grid-cols-2'>
                 <div className=' h-full flex items-center justify-center '>
                     <div  className='text-start relative w-[300px]'>
                         <p data-aos="fade-up" className='my_text_card_texts text-[40px]'>Lorem Ipsum is dummy text</p>
-                        <p data-aos="fade-left" className='relative my_animation'>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+                        <p  data-aos="fade-left" className='relative my_animation mb-7'>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+                        <div className='flex items-center'>
+                            <a data-aos="fade-right" className='text-sm underline flex mr-2' href="#">READ MORE</a>
+                            <HiArrowLongRight/>
+                        </div>
                     </div>
                 </div> 
                 <div  data-aos="fade-right" className='w-[80%] mx-auto relative'>
@@ -74,7 +83,11 @@ export default function Text_slider() {
                 <div className=' h-full flex items-center justify-center '>
                     <div  className='text-start relative w-[300px]'>
                         <p data-aos="fade-up" className='my_text_card_texts text-[40px]'>Lorem Ipsum is dummy text</p>
-                        <p data-aos="fade-left" className='relative my_animation'>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+                        <p data-aos="fade-left" className='relative my_animation mb-7'>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+                        <div className='flex items-center'>
+                            <a data-aos="fade-right" className='text-sm underline flex mr-2' href="#">READ MORE</a>
+                            <HiArrowLongRight/>
+                        </div>
                     </div>
                 </div> 
                 <div  data-aos="fade-right" className='w-[80%] mx-auto relative'>
@@ -87,7 +100,11 @@ export default function Text_slider() {
                 <div className=' h-full flex items-center justify-center '>
                     <div  className='text-start relative w-[300px]'>
                         <p data-aos="fade-up" className='my_text_card_texts text-[40px]'>Lorem Ipsum is dummy text</p>
-                        <p data-aos="fade-left" className='relative my_animation'>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+                        <p data-aos="fade-left" className='relative my_animation mb-7'>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+                        <div className='flex items-center'>
+                            <a data-aos="fade-right" className='text-sm underline flex mr-2' href="#">READ MORE</a>
+                            <HiArrowLongRight className='text-[20px]'/>
+                        </div>
                     </div>
                 </div> 
                 <div  data-aos="fade-right" className='w-[80%] mx-auto relative'>

@@ -10,10 +10,10 @@ export default function Navbar() {
 
     useEffect(() => {
     
-        window.addEventListener("scroll", controlNavbar)
-        return () => {
-          window.removeEventListener("scroll", controlNavbar)
-        };
+      window.addEventListener("scroll", controlNavbar)
+      return () => {
+        window.removeEventListener("scroll", controlNavbar)
+      };
     
     }, []);
     
@@ -36,24 +36,30 @@ export default function Navbar() {
   const nav_styles = "lg:text-color_white lg:bg-transparent lg:absolute lg:top-unset lg:left-0 w-full fixed top-0 text-black bg-white h-[100vh] lg:h-[90px] z-20 flex justify-center overflow-y-hiddeen navbar_transition "
 
   return (
-    <nav className={ show ? "navbar fixed w-[100%] z-10" : "navbar fixed w-[100%] z-10 navbar_hide" }>
-        <div className='h-[90px] flex items-center'>
+    <nav className={ show ? "navbar fixed w-[100%] z-30" : "navbar fixed w-[100%] z-10 navbar_hide" }>
+        <div className='h-[90px] flex items-center justify-between'>
             <div className={active ? `${nav_styles} left-0` : `${nav_styles} left-[100%]`}>
-                <div className='flex flex-col lg:flex-row w-full '>
+                <div className='container flex flex-col lg:flex-row w-full justify-between'>
                     <div className='mobile_logo py-7 w-full lg:hidden '>
-                        <img className='w-[150px] mx-auto cursor-pointer' src={logo} alt="" />
+                      <img className='w-[150px] mx-auto cursor-pointer' src={logo} alt="" />
                     </div>
-                    <div className='text-[40px] flex lg:flex-row flex-col lg:items-center px-5 lg:text-base'>
-                        <IoIosCloseCircleOutline className='ml-auto mr-0 mt-5 mb-5 cursor-pointer lg:hidden' onClick={() => setActive(false)}/>
-                        <a className='ml-3' href="#">AUTO</a>
-                        <a className='ml-3' href="#">RACING</a>
-                        <a className='ml-3' href="#">COLLECTIONS</a>
+                    <div className='text-[40px] flex lg:flex-row flex-col lg:items-center px-0 lg:text-base'>
+                      <IoIosCloseCircleOutline className='ml-auto mr-0 mt-5 mb-5 cursor-pointer lg:hidden' onClick={() => setActive(false)}/>
+                      <a className='ml-8 uppercase' href="#">Main</a>
+                      <a className='ml-8 uppercase' href="#">Companies</a>
+                      <a className='ml-8 uppercase' href="#">About</a>
+                      <a className='ml-8 uppercase' href="#">Advantages</a>
+                    </div>
+                    <div className='text-[40px] flex lg:flex-row mr-4 flex-col lg:items-center px-0 lg:text-base'>
+                      <a className='ml-8 uppercase' href="#">Products</a>
+                      <a className='ml-8 uppercase' href="#">Partners</a>
+                      <a className='ml-8 uppercase' href="#">Contacts</a>
                     </div>
                 </div>
             </div>
-            <p className='lg:hidden text-color_white absolute ml-3' onClick={() => setActive(true)}>MENU</p>
+            <p className='lg:hidden text-color_white cursor-pointer absolute ml-3' onClick={() => setActive(true)}>MENU</p>
             <div className='mx-auto'>
-                <a href="#"><img className='w-[150px]' src={logo} alt="" /></a>
+                <a href="#"><img className='w-[200px]' src={logo} alt="" /></a>
             </div>
         </div>
     </nav>
