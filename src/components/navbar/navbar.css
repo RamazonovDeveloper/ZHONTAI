@@ -1,0 +1,21 @@
+.mobile_logo{
+    border-bottom: 1px solid rgba(140, 139, 139, 0.431);    
+}
+
+.navbar_hide{
+    transform: translate(0px, -90px);
+    transition: ease-in .5s;
+}
+
+.navbar_transition{
+    transition: ease-in .5s;
+}
+/* 
+.navbar_links_hide{
+    transform: translate(100vw, 0px);
+}
+
+.navbar_links_open{
+    transform: translate(0px, 0px);
+} */
+
