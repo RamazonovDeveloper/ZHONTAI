@@ -1,10 +1,13 @@
 import React, { useEffect, useState } from 'react'
 
 import logo from '../../assets/07.png'
+import bayroq from '../../assets/bayroq.png'
+import flag from '../../assets/Flag.png'
 
 import {IoIosCloseCircleOutline} from 'react-icons/io'
 
 import './navbar.css'
+import { Link } from 'react-router-dom';
 
 export default function Navbar() {
 
@@ -33,6 +36,8 @@ export default function Navbar() {
     
   const [active, setActive] = useState(false)
 
+  const [lang, setLang] = useState("uz")
+
   const nav_styles = "lg:text-color_white lg:bg-transparent lg:absolute lg:top-unset lg:left-0 w-full fixed top-0 text-black bg-white h-[100vh] lg:h-[90px] z-20 flex justify-center overflow-y-hiddeen navbar_transition "
 
   return (
@@ -45,15 +50,29 @@ export default function Navbar() {
                     </div>
                     <div className='text-[40px] flex lg:flex-row flex-col lg:items-center px-0 lg:text-base'>
                       <IoIosCloseCircleOutline className='ml-auto mr-0 mt-5 mb-5 cursor-pointer lg:hidden' onClick={() => setActive(false)}/>
-                      <a className='ml-8 uppercase' href="#">Main</a>
-                      <a className='ml-8 uppercase' href="#">Companies</a>
-                      <a className='ml-8 uppercase' href="#">About</a>
-                      <a className='ml-8 uppercase' href="#">Advantages</a>
+                      <Link className='ml-8 uppercase' to={'/'}>Main</Link>
+                      <Link className='ml-8 uppercase' to={'/companies'}>Companies</Link>
+                      <Link className='ml-8 uppercase' to={'/about'}>About</Link>
+                      <Link className='ml-8 uppercase' to={'/advantages'}>Advantages</Link>
                     </div>
                     <div className='text-[40px] flex lg:flex-row mr-4 flex-col lg:items-center px-0 lg:text-base'>
-                      <a className='ml-8 uppercase' href="#">Products</a>
-                      <a className='ml-8 uppercase' href="#">Partners</a>
-                      <a className='ml-8 uppercase' href="#">Contacts</a>
+                      <Link className='ml-8 uppercase' to={'/products'}>Products</Link>
+                      <Link className='ml-8 uppercase' to={'/partners'}>Partners</Link>
+                      <Link className='ml-8 uppercase' to={'/contacts'}>Contacts</Link>
+                      <div className="flex ml-8">
+                        <img
+                          className={lang != "uz" ? "hidden" : "flex"}
+                          onClick={() => setLang("ru")}
+                          src={bayroq}
+                          alt="RuFlag"
+                        />
+                        <img
+                          className={lang != "ru" ? "hidden" : "flex"}
+                          onClick={() => setLang("uz")}
+                          src={flag}
+                          alt="UzFlag"
+                        />
+                      </div>
                     </div>
                 </div>
             </div>

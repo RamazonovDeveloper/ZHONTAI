@@ -40,8 +40,8 @@ export default function Slider() {
             <img src={car4} className='absolute h-[100vh] object-cover' alt="" />
             {/*  className='slider_an_text' */}
             <div className='my_card_text absolute top-[85%] w-full text-center h-1/3 text-white main_card_shadow'>
-              <h2><span className='text-[50px]'>Start your engine</span></h2>
-              <p><span className='text-[40px]'>Lorem ipsum dolor sit amet, consectetur adipisicing.</span></p>
+              <h2><span className='md:text-[50px] text-[40px]'>Start your engine</span></h2>
+              <p><span className='md:text-[40px] text-[30px]'>Lorem ipsum dolor sit amet, consectetur adipisicing.</span></p>
             </div>
           </div>
         </SwiperSlide>

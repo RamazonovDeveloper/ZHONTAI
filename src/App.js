@@ -23,6 +23,26 @@ import Cards from './components/cards/Cards';
 import Text_slider from './components/text_slider/Text_slider';
 import Navbar from './components/navbar/Navbar';
 import Footer from './components/footer/Footer';
+import { Route, RouterProvider, Routes, createBrowserRouter, createRoutesFromElements } from 'react-router-dom';
+import Main from './pages/Main';
+import Companies from './pages/Companies';
+import About from './pages/About';
+
+import RootLayout from './layouts/RootLayout'
+
+const router = createBrowserRouter(
+  createRoutesFromElements(
+    <Route path='/' element={<RootLayout/>}>
+      <Route index element={<Main/>}/>
+      <Route path='companies' element={<Companies/>}/>
+      <Route path='about' element={<About/>}/>
+      <Route path='advantages' element={<><h1>This is advantages page</h1></>}/>
+      <Route path='products' element={<><h1>This is a products page</h1></>}/>
+      <Route path='partners' element={<><h1>This is a partners page</h1></>}/>
+      <Route path='contacts' element={<><h1>This is a contacts page</h1></>}/>
+    </Route>
+  )
+)
 
 function App() {
 
@@ -32,38 +52,6 @@ function App() {
   }, []);
 
   const [loading, setLoading] = useState(false)
-
-  // const [show, setShow] = useState(true)
-
-  const [openNavbar, setOpenNavbar] = useState(false)
-
-  // const [navColor, setNavColor] = useState(0)
-
-  // let lastScrollY = window.scrollY
-
-  // const controlNavbar = () => {
-  //   if(lastScrollY < window.scrollY){
-  //     setShow(false)
-  //   }else{
-  //     setShow(true)
-  //   }
-
-  //   // if(window.scrollY = 0){
-  //   //   setNavColor(0)
-  //   //   // linear gradient
-  //   // }
-  //   // if(window.scrollY < 100){  
-  //   //   setNavColor(1)
-  //   //   // black
-  //   // }
-  //   // if(window.scrollY < 200 && window.screenY > 100){
-  //   //   setNavColor(2)
-  //   //   // white
-  //   // }
-
-  //   lastScrollY = window.scrollY
-  // }
-
   
   gsap.to(".my_card_text", { duration: 1, opacity: 1, y: -40})
 
@@ -74,24 +62,14 @@ function App() {
   tl.to(".my_card_img", { left:'0%', duration: .8, opacity: 1}) 
   
   tl.to(".my_card_img2", { left:'0%', duration: 1.6, opacity: 1})
-  // gsap.to(".my_card_img", { duration: 1, opacity: 1, xPercent: 100})
 
   useEffect(() => {
-    // gsap.to(cardImgRef,{{duration:1, opacity:.5, x:50})
-
-
     setLoading(true)
 
     setTimeout(() => {
       setLoading(false)
     }, 1500)
-
-    // window.addEventListener("scroll", controlNavbar)
-    // return () => {
-    //   window.removeEventListener("scroll", controlNavbar)
-    // };
-
-  }, []);
+  }, []); 
 
   return (
     
@@ -108,42 +86,44 @@ function App() {
             data-testid="loader"
           />
         : 
-          <div className='w-full relative'>
-            {/* NAVBAR SECTION */}
+          <RouterProvider router={router}/>
+          
+          // <div className='w-full relative'>
+          //   {/* NAVBAR SECTION */}
 
-            <Navbar />
+          //   <Navbar />
 
-            {/* <nav className={ show ? "navbar fixed w-[100%] z-10" : "navbar fixed w-[100%] z-10 navbar_hide"}>
-              <div className='h-[90px] flex items-center'>
-                <div className={'text-color_white absolute w-full'}>
-                  <div>
-                    <a className='ml-3' href="#">AUTO</a>
-                    <a className='ml-3' href="#">RACING</a>
-                    <a className='ml-3' href="#">COLLECTIONS</a>
-                  </div>
-                </div>
-                <a className='lg:hidden text-color_white absolute ml-3' href="#" onClick={() => setOpenNavbar(true)}>MENU</a>
-                <div className='mx-auto'>
-                  <a href="#"><img className='w-[150px]' src={logo} alt="" /></a>
-                </div>
-              </div>
-            </nav> */}
+          //   {/* <nav className={ show ? "navbar fixed w-[100%] z-10" : "navbar fixed w-[100%] z-10 navbar_hide"}>
+          //     <div className='h-[90px] flex items-center'>
+          //       <div className={'text-color_white absolute w-full'}>
+          //         <div>
+          //           <a className='ml-3' href="#">AUTO</a>
+          //           <a className='ml-3' href="#">RACING</a>
+          //           <a className='ml-3' href="#">COLLECTIONS</a>
+          //         </div>
+          //       </div>
+          //       <a className='lg:hidden text-color_white absolute ml-3' href="#" onClick={() => setOpenNavbar(true)}>MENU</a>
+          //       <div className='mx-auto'>
+          //         <a href="#"><img className='w-[150px]' src={logo} alt="" /></a>
+          //       </div>
+          //     </div>
+          //   </nav> */}
 
-            {/* SLIDER SECTION */}
-            <Slider/>
+          //   {/* SLIDER SECTION */}
+          //   <Slider/>
 
-            {/* SECTION SINGLE CARD */}
-            <Text_slider/>
+          //   {/* SECTION SINGLE CARD */}
+          //   <Text_slider/>
             
 
-            {/* SECTION CARDS */}
-            <Cards/>
+          //   {/* SECTION CARDS */}
+          //   <Cards/>
 
 
-            {/* FOOTER */}
-            <Footer />
+          //   {/* FOOTER */}
+          //   <Footer />
 
-          </div>
+          // </div>
       }
 
       
