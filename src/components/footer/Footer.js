@@ -81,7 +81,7 @@ export default function Footer() {
             </ul>
         
         </div>
-        <div className='lg:hidden w-[50%]'>
+        <div className='lg:hidden w-[40%]'>
             <Accordion 
             sx={{
                 boxShadow: "none",
