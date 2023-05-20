@@ -2,10 +2,61 @@ import { Accordion, AccordionDetails, AccordionSummary } from '@mui/material'
 import {MdExpandMore} from 'react-icons/md';
 import React from 'react'
 
-export default function Footer() {
+import { FaFacebookF, FaTelegramPlane, FaInstagram } from "react-icons/fa"
+
+import logo from '../../assets/07.png'
+
+import './footer.css'
+
+import { footer } from '../../languageData/FooterLang';
+
+export default function Footer({lang}) {
   return (
-    <div className='bg-[#181818] text-white'>
-        <div className=' lg:flex justify-evenly py-6 hidden'>
+    <div className='footer'>
+        <div className='footer_overlay'>
+
+            <div className='container text-white'>
+                <div className='grid lg:grid-cols-3 grid-cols-1 gap-5 py-10'>
+                    <div>
+                        <img className='w-4/5 mb-5 max-w-[300px]' src={logo} alt="" />
+                        <p className='text-[#fffa]'>{footer[lang].sec_1_title}</p>
+                    </div>
+                    <div>
+                        <h3 className='text-[30px] font-semibold mb-[30px] mt-[20px] lg:mt-0'>
+                            {footer[lang].sec_2_title}
+                        </h3>
+                        <div className='grid grid-cols-2'>
+                            <div className='flex flex-col'>
+                                <a href="">- {footer[lang].link_1}</a>
+                                <a href="">- {footer[lang].link_2}</a>
+                            </div>
+                            <div className='flex flex-col'>
+                                <a href="">- {footer[lang].link_3}</a>
+                                <a href="">- {footer[lang].link_4}</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <h3 className='text-[30px] font-semibold mb-[30px] mt-[20px] lg:mt-0'>{footer[lang].sec_3_title}</h3>
+                        <p className='text-[#fffa]'>{footer[lang].sec_3_text}</p>
+                        <div className='flex mt-5'>
+                            <a className='network' href="#">
+                                <FaFacebookF className='text-white'/>
+                            </a>
+                            <a className='network' href="#">
+                                <FaTelegramPlane className='text-white'/>
+                            </a>
+                            <a className='network' href="#">
+                                <FaInstagram className='text-white'/>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        {/* bg-[#181818] text-white */}
+        {/* <div className=' lg:flex justify-evenly py-6 hidden'>
             <ul className='flex flex-col text-center '>
                 <li className="py-[20px]">
                     <a className='font-semibold' href="#">Auto</a>
@@ -168,7 +219,7 @@ export default function Footer() {
                     </ul>
                 </AccordionDetails>
             </Accordion>
-        </div>
+        </div> */}
     </div>
     
   )

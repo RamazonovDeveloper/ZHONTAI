@@ -1,0 +1,80 @@
+.contact_title{
+    background: url("../assets/contactBack.jpg");
+    /* background-size: contain; */
+    background-repeat: no-repeat;
+}
+
+
+.contact_title_item{
+    background: rgb(0,0,0);
+    background: linear-gradient(180deg, rgba(0,0,0,0.06206232492997199) 0%, rgba(0,0,0,0.15449929971988796) 25%, rgba(0,0,0,0.25253851540616246) 51%, rgba(0,0,0,0.35898109243697474) 75%, rgba(0,0,0,0.5214460784313726) 100%);
+}
+
+/* 2px solid  */
+/* #2154cf */
+
+.contact_aloqa::after{
+    content: '';
+    position: absolute;
+    bottom: -10px;
+    height: 1px;
+    width: 50px;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+    transform: translateX(-50%);
+    transform: translateX(-50%);
+    z-index: 0;
+    border-bottom: 2px solid #244f98;
+}
+
+.contact_cards{
+    box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+}
+
+.contact_form_input{
+    box-shadow: none;
+    border: 1px solid #f1f1f1;
+    padding: 5px 20px;
+    height: 50px;
+    background: none;
+    color: #626c84;
+    font-size: 14px;
+    border-radius: 0;
+    font-weight: normal;
+    outline: none;
+    margin-bottom: 15px;
+}
+
+.contact_form_area{
+    height: 150px;
+    box-shadow: none;
+    border: 1px solid #f1f1f1;
+    padding: 20px 20px;
+    /* height: 50px; */
+    background: none;
+    color: #626c84;
+    font-size: 14px;
+    border-radius: 0;
+    font-weight: normal;
+    outline: none;
+    margin-bottom: 15px;
+}
+
+.contant_form_btn{
+    font-size: 16px;
+    font-weight: 600;
+    padding: 15px 50px;
+    line-height: 1.33;
+    /* border-radius: 30px; */
+    border: #244f98 1px solid;
+    background: #244f98;
+    color: white;
+    transition: .5s;
+}
+
+.contant_form_btn:hover{
+    color: #244f98;
+    background: white;
+}
+
+

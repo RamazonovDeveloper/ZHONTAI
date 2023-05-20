@@ -1,13 +1,8 @@
 import './App.css';
 
-import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
 import "swiper/css/pagination";
-import { Pagination, Autoplay, Navigation } from "swiper";
 
-import logo from './assets/07.png'
-import ferrariImg from './assets/697316.jpeg'
-import ferrariImg2 from './assets/758296.jpg'
 import { useEffect, useState } from 'react';
 
 import AOS from "aos";
@@ -18,33 +13,58 @@ import { gsap } from 'gsap';
 
 // LOADER
 import BeatLoader from "react-spinners/BeatLoader";
-import Slider from './components/slider/Slider';
-import Cards from './components/cards/Cards';
-import Text_slider from './components/text_slider/Text_slider';
-import Navbar from './components/navbar/Navbar';
-import Footer from './components/footer/Footer';
 import { Route, RouterProvider, Routes, createBrowserRouter, createRoutesFromElements } from 'react-router-dom';
 import Main from './pages/Main';
 import Companies from './pages/Companies';
 import About from './pages/About';
 
 import RootLayout from './layouts/RootLayout'
+import Advantages from './pages/Advantages';
+import Products from './pages/Products';
+import Contacts from './pages/Contacts';
+import Partners from './pages/Partners';
 
-const router = createBrowserRouter(
-  createRoutesFromElements(
-    <Route path='/' element={<RootLayout/>}>
-      <Route index element={<Main/>}/>
-      <Route path='companies' element={<Companies/>}/>
-      <Route path='about' element={<About/>}/>
-      <Route path='advantages' element={<><h1>This is advantages page</h1></>}/>
-      <Route path='products' element={<><h1>This is a products page</h1></>}/>
-      <Route path='partners' element={<><h1>This is a partners page</h1></>}/>
-      <Route path='contacts' element={<><h1>This is a contacts page</h1></>}/>
-    </Route>
-  )
-)
+// const router = createBrowserRouter(
+//   createRoutesFromElements(
+//     <Route path='/' element={<RootLayout/>}>
+//       <Route index element={<Main/>}/>
+//       <Route path='companies' element={<Companies/>}/>
+//       <Route path='about' element={<About/>}/>
+//       <Route path='advantages' element={<Advantages/>}/>
+//       <Route path='products' element={<><h1>This is a products page</h1></>}/>
+//       <Route path='partners' element={<><h1>This is a partners page</h1></>}/>
+//       <Route path='contacts' element={<><h1>This is a contacts page</h1></>}/>
+//     </Route>
+//   )
+// )
 
 function App() {
+  
+  const identifyLang = localStorage.getItem('lang')
+
+  if (!identifyLang) {
+    localStorage.setItem("lang", "uz")
+    identifyLang = "uz"
+  }
+
+  const [lang, setLang] = useState(identifyLang)
+  console.log("App js lang is");
+  console.log(lang)
+  
+  const router = createBrowserRouter(
+    createRoutesFromElements(
+      <Route path='/' element={<RootLayout setLang={setLang} lang={lang}/>}>
+        <Route index element={<Main/>}/>
+        <Route path='companies' element={<Companies/>}/>
+        <Route path='about' element={<About lang={lang}/>}/>
+        <Route path='advantages' element={<Advantages lang={lang}/>}/>
+        <Route path='products' element={<Products lang={lang}/>}/>
+        <Route path='partners' element={<Partners/>}/>
+        <Route path='contacts' element={<Contacts/>}/>
+      </Route>
+    )
+  )
+
 
   useEffect(() => {
     AOS.init();
@@ -78,7 +98,7 @@ function App() {
       {
         loading ? 
           <BeatLoader
-            className='loader_transition w-full h-[100vh] mt-[20%] text-center'
+            className='loader_transition w-full h-[100vh] mt-[20%] text-center overflow-hidden'
             color={"#34D5D5"}
             loading={loading}
             size={30}
@@ -130,5 +150,7 @@ function App() {
     </div>
   );
 }
+
+
 
 export default App;

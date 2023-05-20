@@ -63,7 +63,7 @@ export default function Text_slider() {
         >
             <SwiperSlide className='h-full'>
             <div className='flex flex-col justify-between py-8 md:grid md:grid-cols-2 md:py-unset md:mt-[120px] '>
-                <div className='text-center relative h-[40vh] md:pl-[30px] md:text-start'>
+                <div className='text-center relative h-[40vh] md:pl-[30px] md:text-start flex items-center justify-center'>
                     <div className=' md:w-[300px] md:mx-auto my-auto'>
                         <p data-aos="fade-up" className='md:text-[40px] text-[35px]'>Lorem Ipsum is dummy text</p>
                         <p data-aos="fade-left" className='relative mb-7'>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
@@ -73,7 +73,7 @@ export default function Text_slider() {
                         </div>
                     </div>
                 </div>
-                <div data-aos="fade-right" className='w-full '>
+                <div data-aos="fade-right" className='w-full'>
                     <div className='mx-auto w-[80%]'>
                         <img className='' src={ferrariImg2} alt="Ferrari image" />
                     </div>

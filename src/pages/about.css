@@ -1,0 +1,60 @@
+.about_1_section{
+    background: url("../assets/about_solar_2.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center bottom;
+}
+
+/* .about_1_section_bac{
+    background: rgba(0, 0, 255, 0.324);
+} */
+
+.about_1_section_bac_item{
+    /* padding-top: 100px; */
+    padding-bottom: auto;
+    background: #203e83bb;
+}
+
+.about_capacity{
+    background: url("../assets/image 1.png") no-repeat;
+    background-size: cover;
+    background-position: bottom;
+}
+
+.about_capacity_item{
+    background: rgba(255, 255, 255, 0.661);
+}
+
+.namuna_item{
+    padding: 10px;
+    transition: .3s ease;
+    box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+}
+
+.namuna_item:hover{
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+
+.meat_title_wrapper{
+    background: url("../assets/meatBack.png");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+
+}
+
+.meat_title_wrapper_filter{
+    background-color: rgba(0, 0, 0, 0.566);
+}
+
+.machine_title_wrapper{
+    background: url("../assets/machineBack.png");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+
+}
+
+.machine_title_wrapper_filter{
+    background-color: rgba(255, 255, 255, 0.59);
+}
