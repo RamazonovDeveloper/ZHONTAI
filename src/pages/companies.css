@@ -1,6 +1,8 @@
 .partners{
-    background: url("../assets/companiesBack.jpg");
+    background: url("../assets/companies2Img.jpg");
     background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 
 .partners_layout{

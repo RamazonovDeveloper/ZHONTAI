@@ -1,5 +1,7 @@
 .footer{
-    background: url("../../assets/footer-bg.jpg");
+    background: url("../../assets/footerNewBack.jpg");
+    background-size: cover;
+    background-position: bottom center;
 }
 
 .footer_overlay{

@@ -60,7 +60,7 @@ function App() {
         <Route path='advantages' element={<Advantages lang={lang}/>}/>
         <Route path='products' element={<Products lang={lang}/>}/>
         <Route path='partners' element={<Partners/>}/>
-        <Route path='contacts' element={<Contacts/>}/>
+        <Route path='contacts' element={<Contacts lang={lang}/>}/>
       </Route>
     )
   )

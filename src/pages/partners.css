@@ -5,26 +5,25 @@
 }
 
 .partners_section  .swiper-slide {
-    width: 31%!important;
-    height: 300px!important;
-    
-    text-align: center;
-    font-size: 18px;
-    border-radius: 30px;
-    background: rgba(205, 203, 203, 0.53);
+  width: 31%!important;
+  height: 300px!important;
+  text-align: center;
+  font-size: 18px;
+  border-radius: 30px;
+  /* background: rgba(205, 203, 203, 0.53); */
 
-    
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
   
-  .swiper-slide img {
-    display: block;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-  }
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+  
+.partners_section .swiper-slide img {
+  width: 70%;
+  height: fit-content;
+  display: flex;
+  object-fit: none;
+}
 
 
 

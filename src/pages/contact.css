@@ -1,13 +1,14 @@
 .contact_title{
-    background: url("../assets/contactBack.jpg");
+    background: url("../assets/ContactUs.jpg");
     /* background-size: contain; */
+    background-position: center bottom;
     background-repeat: no-repeat;
 }
 
 
 .contact_title_item{
     background: rgb(0,0,0);
-    background: linear-gradient(180deg, rgba(0,0,0,0.06206232492997199) 0%, rgba(0,0,0,0.15449929971988796) 25%, rgba(0,0,0,0.25253851540616246) 51%, rgba(0,0,0,0.35898109243697474) 75%, rgba(0,0,0,0.5214460784313726) 100%);
+    background: linear-gradient(180deg, rgba(0,0,0,0.08206232492997199) 0%, rgba(0,0,0,0.55449929971988796) 25%, rgba(0,0,0,0.75253851540616246) 51%, rgba(0,0,0,0.65898109243697474) 75%, rgba(0,0,0,0.7214460784313726) 100%);
 }
 
 /* 2px solid  */

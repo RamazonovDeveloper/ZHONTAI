@@ -97,7 +97,7 @@ export default function Advantages({lang}) {
                 </div>
             </div>
         </div>
-        <div className='pt-28'>
+        <div className='pt-28 md:pb-20 pb-10'>
             <h1 className='text-4xl text-green-500 mb-3'>{about[lang].adv1_title}</h1>
             <ul className='grid md:grid-cols-4 gap-2 my-8 grid-cols-2'>
                 <li data-aos="fade-up" className='bg-gray-300 rounded-md text-center mt-4 flex justify-center items-center p-4'>{about[lang].adv1_text1}</li>

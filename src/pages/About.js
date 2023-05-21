@@ -24,7 +24,7 @@ function About({lang}) {
                 </div>
             </div>
         </div>
-        <div className=''>
+        <div className='my-10'>
             <div className='grid lg:grid-cols-2 grid-cols-1'>
                 <div  data-aos="fade-right" className='h-100% items-center justify-center py-12 lg:py-0 hidden lg:flex'>
                     <div className='w-[80%]'>
@@ -55,13 +55,13 @@ function About({lang}) {
             </div>
         </div>
 
-        <div className='about_capacity h-[85vh] py-10 flex items-end'>
-            <div data-aos="fade-up" className='w-full about_capacity_item py-5 px-5'>
+        <div className='about_capacity h-[85vh] flex items-end'>
+            <div data-aos="fade-up" className='w-full about_capacity_item py-14 px-5'>
                 <p className='text-3xl font-medium'>{about[lang].slide4_text}</p>
             </div>
         </div>
 
-        <div className=''>
+        <div className='my-10'>
             <div className='grid lg:grid-cols-2 grid-cols-1'>
                 <div data-aos="fade-right" className='h-100% flex items-center justify-center py-12 lg:py-0'>
                     <div className='w-[80%]'>
