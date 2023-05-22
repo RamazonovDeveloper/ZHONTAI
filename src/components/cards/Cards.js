@@ -26,7 +26,7 @@ export default function Cards() {
   }
 
   return (
-    <div className='w-[100%] overflow-x-hidden md:mt-[100px] mt-[250px] lg:mt-0'>
+    <div className='w-[100%] overflow-x-hidden md:mt-[100px] mt-[250px] lg:mt-[50px]'>
       <div className='md:h-[80vh] bg-slate-500 grid md:grid-cols-2 sm:grid-cols-1 sm:h-[100vh] h-[80vh]'>
         {/* <div className='h-full bg-slate-800 relative my_card_image'>
           <img data-aos="fade-right" className='absolute sm:h-full sm:w-fit w-full object-cover z-10' src={ferrariImg} onClick={() => handleClick()} alt="" />
