@@ -25,9 +25,9 @@ function Companies() {
         <div className='partners_layout h-full py-8 '>
           <div className="container text-center">
             <h2 className='text-[28px] mb-12'>Our partners Around the World</h2>
-            <div className='grid grid-cols-3 gap-6'>
-              <div className='text-center'>
-                <h2 className='text-[30px] font-semibold w-4/5'>Lorem, ipsum.</h2>
+            <div className='grid md:grid-cols-3 gap-6 grid-cols-1'>
+              <div className=''>
+                <h2 className='text-[30px] font-semibold'>Lorem, ipsum.</h2>
                 <p>Lorem, ipsum dolor. (Lorem ipsum dolor sit amet.) Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni, tenetur?</p>
               </div>
               <div>

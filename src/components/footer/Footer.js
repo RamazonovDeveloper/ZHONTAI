@@ -16,7 +16,7 @@ export default function Footer({lang}) {
         <div className='footer_overlay'>
 
             <div className='container text-white'>
-                <div className='grid lg:grid-cols-3 grid-cols-1 gap-5 py-10'>
+                <div className='grid md:grid-cols-3 grid-cols-1 gap-5 py-10'>
                     <div>
                         <img className='w-4/5 mb-5 max-w-[300px]' src={logo} alt="" />
                         <p className='text-[#fffa]'>{footer[lang].sec_1_title}</p>
