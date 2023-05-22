@@ -12,17 +12,22 @@
   border-radius: 30px;
   /* background: rgba(205, 203, 203, 0.53); */
 
+
   
   display: flex;
   justify-content: center;
   align-items: center;
 }
+
+@media screen and (max-width:600px) {
+  .partners_section  .swiper-slide {
+    width: 20%!important;
+  }
+}
   
 .partners_section .swiper-slide img {
-  width: 70%;
-  height: fit-content;
-  display: flex;
-  object-fit: none;
+  width: 70%!important;
+  height: unset;
 }
 
 

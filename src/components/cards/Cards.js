@@ -1,7 +1,9 @@
 import React from 'react'
 
-import ferrariImg  from '../../assets/697316.jpeg'
-import ferrariImg2 from '../../assets/758296.jpg'
+import card1   from '../../assets/cardImg1.jpg'
+import card2   from '../../assets/cardImg2.jpg'
+import card3   from '../../assets/cardImg3.jpg'
+import card4   from '../../assets/cardImg4.jpg'
 
 import './cards.css'
 import { gsap } from 'gsap'
@@ -36,14 +38,31 @@ export default function Cards() {
         </div> */}
 
         <div className='h-full bg-slate-800 relative my_card_image'>
-          <img data-aos="fade-right" className='card_item_img absolute z-10' src={ferrariImg} onClick={() => handleClick()} alt="" />
+          <img data-aos="fade-right" className='card_item_img absolute z-10' src={card2} onClick={() => handleClick()} alt="" />
           <div className='absolute z-20 text-white top-[76%] text-center md:text-[40px] text-[20px] h-1/4 w-full cards_shadow  flex items-center justify-center'>
             <p data-aos="fade-up">Lorem ipsum dolor sit amet.</p>
           </div>
         </div>
 
         <div className='h-full bg-slate-800 relative my_card_image'>
-          <img data-aos="fade-right" className='card_item_img absolute z-10' src={ferrariImg2} onClick={() => handleClick()} alt="" />
+          <img data-aos="fade-right" className='card_item_img absolute z-10' src={card4} onClick={() => handleClick()} alt="" />
+          <div className='absolute z-20 text-white top-[76%] text-center md:text-[40px] text-[20px] h-1/4 w-full cards_shadow  flex items-center justify-center'>
+            <p data-aos="fade-up">Lorem ipsum dolor sit amet.</p>
+          </div>
+        </div>
+      </div>
+
+      <div className='md:h-[80vh] bg-slate-500 grid md:grid-cols-2 sm:grid-cols-1 sm:h-[100vh] h-[80vh]'>
+
+        <div className='h-full bg-slate-800 relative my_card_image'>
+          <img data-aos="fade-right" className='card_item_img absolute z-10' src={card3} onClick={() => handleClick()} alt="" />
+          <div className='absolute z-20 text-white top-[76%] text-center md:text-[40px] text-[20px] h-1/4 w-full cards_shadow  flex items-center justify-center'>
+            <p data-aos="fade-up">Lorem ipsum dolor sit amet.</p>
+          </div>
+        </div>
+
+        <div className='h-full bg-slate-800 relative my_card_image'>
+          <img data-aos="fade-right" className='card_item_img absolute z-10' src={card1} onClick={() => handleClick()} alt="" />
           <div className='absolute z-20 text-white top-[76%] text-center md:text-[40px] text-[20px] h-1/4 w-full cards_shadow  flex items-center justify-center'>
             <p data-aos="fade-up">Lorem ipsum dolor sit amet.</p>
           </div>

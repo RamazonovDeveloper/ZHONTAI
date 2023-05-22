@@ -23,12 +23,11 @@ export default function Partners() {
       <Swiper
         slidesPerView={3}
         spaceBetween={25}
-        navigation={true}
         autoplay={{
             delay: 2500,
             disableOnInteraction: false,
         }}
-        modules={[Navigation, Autoplay]}
+        modules={[Autoplay]}
         className="mySwiper"
       >
         <SwiperSlide><img src={partners1} alt="" /></SwiperSlide>
@@ -37,6 +36,14 @@ export default function Partners() {
         <SwiperSlide><img src={partners4} alt="" /></SwiperSlide>
         <SwiperSlide><img src={partners5} alt="" /></SwiperSlide>
         <SwiperSlide><img src={partners3} alt="" /></SwiperSlide>
+        <SwiperSlide><img src={partners1} alt="" /></SwiperSlide>
+        <SwiperSlide><img src={partners2} alt="" /></SwiperSlide>
+        <SwiperSlide><img src={partners3} alt="" /></SwiperSlide>
+        <SwiperSlide><img src={partners4} alt="" /></SwiperSlide>
+        <SwiperSlide><img src={partners1} alt="" /></SwiperSlide>
+        <SwiperSlide><img src={partners2} alt="" /></SwiperSlide>
+        <SwiperSlide><img src={partners3} alt="" /></SwiperSlide>
+        <SwiperSlide><img src={partners4} alt="" /></SwiperSlide>
 
         {/* <SwiperSlide>IPOTEKA BANK</SwiperSlide>
         <SwiperSlide>ANOR BANK</SwiperSlide>

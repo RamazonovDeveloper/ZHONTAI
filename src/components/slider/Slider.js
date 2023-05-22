@@ -6,10 +6,14 @@ import "aos/dist/aos.css";
 
 import { Pagination, Autoplay, Navigation } from "swiper";
 
-import ferrariImg from '../../assets/697316.jpeg'
-import ferrariImg2 from '../../assets/758296.jpg'
-import car3 from '../../assets/car3.jpg'
-import car4 from '../../assets/car5.jpg'
+import main1 from '../../assets/main1.png'
+import main2 from '../../assets/main2.png'
+import main3 from '../../assets/main3.jpg'
+import main4 from '../../assets/main4.png'
+import main5 from '../../assets/main5.png'
+import main6 from '../../assets/main6.png'
+import main7 from '../../assets/main7.png'
+import main8 from '../../assets/main8.png'
 
 import './slider.css'
 import { gsap } from 'gsap';
@@ -30,51 +34,72 @@ export default function Slider() {
             clickable:true
         }}
         autoplay={{
-            delay: 3500,
+            delay: 2500,
             disableOnInteraction: false,
         }}
         modules={[Pagination, Autoplay]}
         > 
         <SwiperSlide>
           <div className='relative w-full h-[100vh]'>
-            <img src={car4} className='absolute h-[100vh] object-cover' alt="" />
+            <img src={main1} className='absolute h-[100vh] object-cover' alt="" />
             {/*  className='slider_an_text' */}
-            <div className='my_card_text absolute top-[85%] w-full text-center h-1/3 text-white main_card_shadow'>
-              <h2><span className='md:text-[50px] text-[40px]'>Start your engine</span></h2>
-              <p><span className='md:text-[40px] text-[30px]'>Lorem ipsum dolor sit amet, consectetur adipisicing.</span></p>
+            <div className='absolute my_slider_text w-full text-center h-[40%] text-white main_card_shadow px-2'>
+              <h2><span className='md:text-[50px] text-[40px]'>A Global Leader in Solar</span></h2>
+              <p><span className='md:text-[40px] text-[30px]'>Industry-leading products and customer service worldwide, with a demonstrated commitment to sustainability. </span></p>
             </div>
           </div>
         </SwiperSlide>
         <SwiperSlide>
           <div className='relative w-full h-[100vh]'>
-            <img src={ferrariImg} className='absolute h-[100vh] object-cover' alt="" />
+            <img src={main2} className='absolute h-[100vh] object-cover' alt="" />
             {/*  className='slider_an_text' */}
-            <div className='my_card_text absolute top-[85%] w-full text-center h-1/3 text-white main_card_shadow'>
-              <h2><span className='md:text-[50px] text-[40px]'>Start your engine</span></h2>
-              <p><span className='md:text-[40px] text-[30px]'>Lorem ipsum dolor sit amet, consectetur adipisicing.</span></p>
+            <div className='absolute my_slider_text w-full text-center h-[40%] text-white main_card_shadow px-2'>
+              <h2><span className='md:text-[50px] text-[40px]'>A Responsible Corporate Customer</span></h2>
+              <p><span className='md:text-[40px] text-[30px]'>Industry products and customer service worldwide, with a demonstrated commitment to sustainability. </span></p>
             </div>
           </div>
         </SwiperSlide>
         <SwiperSlide>
           <div className='relative w-full h-[100vh]'>
-            <img src={car3} className='absolute h-[100vh] object-cover' alt="" />
+            <img src={main3} className='absolute h-[100vh] object-cover' alt="" />
             {/*  className='slider_an_text' */}
-            <div className='my_card_text absolute top-[85%] w-full text-center h-1/3 text-white main_card_shadow'>
-              <h2><span className='md:text-[50px] text-[40px]'>Start your engine</span></h2>
-              <p><span className='md:text-[40px] text-[30px]'>Lorem ipsum dolor sit amet, consectetur adipisicing.</span></p>
+            <div className='absolute my_slider_text w-full text-center h-[40%] text-white main_card_shadow px-2'>
+              <h2><span className='md:text-[50px] text-[40px]'>A Global Leader in Solar</span></h2>
+              <p><span className='md:text-[40px] text-[30px]'>Industry-leading products and customer service worldwide, with a demonstrated commitment to sustainability. </span></p>
             </div>
           </div>
         </SwiperSlide>
-          <SwiperSlide>
-            <div className='relative w-full h-[100vh]'>
-              <img src={ferrariImg2} className='absolute h-[100vh] object-cover' alt="" />
-              {/*  className='slider_an_text' */}
-              <div className='my_card_text absolute top-[85%] w-full text-center h-1/3 text-white main_card_shadow'>
-                <h2><span className='md:text-[50px] text-[40px]'>Start your engine</span></h2>
-                <p><span className='md:text-[40px] text-[30px]'>Lorem ipsum dolor sit amet, consectetur adipisicing.</span></p>
-              </div>
+        <SwiperSlide>
+          <div className='relative w-full h-[100vh]'>
+            <img src={main4} className='absolute h-[100vh] object-cover' alt="" />
+            {/*  className='slider_an_text' */}
+            <div className='absolute my_slider_text w-full text-center h-[40%] text-white main_card_shadow px-2'>
+              <h2><span className='md:text-[50px] text-[40px]'>A Global Leader in Solar</span></h2>
+              <p><span className='md:text-[40px] text-[30px]'>Industry-leading products and customer service worldwide, with a demonstrated commitment to sustainability. </span></p>
             </div>
-          </SwiperSlide>
+          </div>
+        </SwiperSlide>
+        <SwiperSlide>
+          <div className='relative w-full h-[100vh]'>
+            <img src={main5} className='absolute h-[100vh] object-cover' alt="" />
+            {/*  className='slider_an_text' */}
+            <div className='absolute my_slider_text w-full text-center h-[40%] text-white main_card_shadow px-2'>
+              <h2><span className='md:text-[50px] text-[40px]'>A Global Leader in Solar</span></h2>
+              <p><span className='md:text-[40px] text-[30px]'>Industry-leading products and customer service worldwide, with a demonstrated commitment to sustainability. </span></p>
+            </div>
+          </div>
+        </SwiperSlide>
+        <SwiperSlide>
+          <div className='relative w-full h-[100vh]'>
+            <img src={main6} className='absolute h-[100vh] object-cover' alt="" />
+            {/*  className='slider_an_text' */}
+            <div className='absolute my_slider_text w-full text-center h-[40%] text-white main_card_shadow px-2'>
+              <h2><span className='md:text-[50px] text-[40px]'>A Global Leader in Solar</span></h2>
+              <p><span className='md:text-[40px] text-[30px]'>Industry-leading products and customer service worldwide, with a demonstrated commitment to sustainability. </span></p>
+            </div>
+          </div>
+        </SwiperSlide>
+        
           {/* <SwiperSlide><img src={ferrariImg} alt="" /></SwiperSlide>
           <SwiperSlide><img src={ferrariImg2} alt="" /></SwiperSlide> */}
       </Swiper>
