@@ -36,7 +36,7 @@ export default function Products({lang}) {
 
       <div className='container my-[70px]'>
         <div>
-            <div className='grid grid-cols-3 justify-center gap-4'>
+            <div className='grid md:grid-cols-3 justify-center sm:grid-cols-2 grid-cols-1 gap-4'>
                 <div className='flex flex-col justify-between items-center namuna_item rounded-xl'>
                     <img className='w-4/5' src={meat1} alt="" />
                     <p>Go‘sht qiymalagich - 14.5 kv</p>
@@ -71,7 +71,7 @@ export default function Products({lang}) {
 
         <div className='container my-[70px]'>
         <div>
-            <div className='grid grid-cols-3 justify-center gap-4'>
+            <div className='grid md:grid-cols-3 justify-center sm:grid-cols-2 grid-cols-1 gap-4'>
                 <div className='flex flex-col justify-between items-center namuna_item rounded-xl'>
                     <img className='w-4/5' src={machine2} alt="" />
                     <p>Tikuv mashinasi -60 vatt</p>

@@ -124,7 +124,7 @@ export default function Advantages({lang}) {
                     {/* ACCUMULATOR IMAGE */}
                     <div data-aos="fade-right" className='relative w-fit flex items-center justify-center h-full mt-8 md:pl-10 lg:pl-16'>
                         <img src={adv_img6} className='w-[85%] ' alt="" />    
-                        <p className='uppercase text-green-500 absolute top-[90%] font-semibold text-[20px]'>{about[lang].text_counter}</p>
+                        <p className='uppercase text-green-500 absolute top-[90%] font-semibold text-[20px]'>{about[lang].text_accumlator}</p>
                     </div>
                 </div>
                 {/* HOUSE IMAGE */}
