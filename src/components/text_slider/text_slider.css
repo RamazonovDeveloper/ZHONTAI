@@ -5,13 +5,17 @@
   /* margin-bottom: auto!important; */
 }
 
-@media screen and (max-width:680px) {
+.my_text_slider .swiper-slide{
+  height: fit-content!important;
+}
+
+/* @media screen and (max-width:680px) {
   .mySwiper{
     margin-top: 120px!important;
     margin-bottom: auto!important;
-  }
+  } 
 }
-  
+   */
 /* .my_text_image{
   height: 270px!important;
 } */

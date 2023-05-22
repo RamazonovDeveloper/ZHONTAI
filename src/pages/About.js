@@ -9,7 +9,6 @@ import {about} from "../languageData/AboutLang"
 
 function About({lang}) {
 
-
   return (
     <div className='overflow-x-hidden'>
         <div className='about_1_section h-[100vh]'>
