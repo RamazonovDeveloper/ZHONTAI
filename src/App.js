@@ -8,11 +8,10 @@ import { useEffect, useState } from 'react';
 import AOS from "aos";
 import "aos/dist/aos.css";
 
-// GSAP ANIMATION PLUGINS
-import { gsap } from 'gsap';
-
 // LOADER
 import BeatLoader from "react-spinners/BeatLoader";
+
+
 import { Route, RouterProvider, Routes, createBrowserRouter, createRoutesFromElements } from 'react-router-dom';
 import Main from './pages/Main';
 import Companies from './pages/Companies';
@@ -73,16 +72,6 @@ function App() {
 
   const [loading, setLoading] = useState(false)
   
-  gsap.to(".my_card_text", { duration: 1, opacity: 1, y: -40})
-
-  gsap.to(".single_card_title_span", {duration: 5, opacity: 1, y:-30})
-  
-  let tl = gsap.timeline()
-  
-  tl.to(".my_card_img", { left:'0%', duration: .8, opacity: 1}) 
-  
-  tl.to(".my_card_img2", { left:'0%', duration: 1.6, opacity: 1})
-
   useEffect(() => {
     setLoading(true)
 
@@ -97,14 +86,16 @@ function App() {
 
       {
         loading ? 
-          <BeatLoader
-            className='loader_transition w-full h-[100vh] mt-[20%] text-center overflow-hidden'
-            color={"#34D5D5"}
-            loading={loading}
-            size={30}
-            aria-label="Loading Spinner"
-            data-testid="loader"
-          />
+          <div className='w-full h-[100vh] overflow-hidden'>
+            <BeatLoader
+              className='loader_transition w-full h-[100vh] mt-[20%] text-center overflow-hidden'
+              color={"#34D5D5"}
+              loading={loading}
+              size={30}
+              aria-label="Loading Spinner"
+              data-testid="loader"
+            />
+          </div>
         : 
           <RouterProvider router={router}/>
           

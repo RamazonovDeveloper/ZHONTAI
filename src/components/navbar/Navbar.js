@@ -50,7 +50,7 @@ export default function Navbar({setLang, lang}) {
   return (
     <nav className={ show ? "navbar fixed w-[100%] z-30" : "navbar fixed w-[100%] z-10 navbar_hide" }>
         <div className='h-[90px] flex items-center justify-between'>
-            <div className={active ? `${nav_styles} left-0` : `${nav_styles} left-[100%]`}>
+            <div className={active ? `${nav_styles} left-0 h-[100vh] overflow-hidden` : `${nav_styles} left-[100%]`}>
                 <div className='flex flex-col lg:flex-row w-full lg:justify-between'>
                     <div className='mobile_logo py-7 w-full lg:hidden '>
                       <img className='w-[150px] mx-auto cursor-pointer' src={logo} alt="" />

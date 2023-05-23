@@ -45,7 +45,7 @@ export default function Cards() {
         </div>
 
         <div className='h-full bg-slate-800 relative my_card_image'>
-          <img data-aos="fade-right" className='card_item_img absolute z-10' src={card4} onClick={() => handleClick()} alt="" />
+          <img data-aos="fade-left" className='card_item_img absolute z-10' src={card4} onClick={() => handleClick()} alt="" />
           <div className='absolute z-20 text-white top-[76%] text-center md:text-[40px] text-[20px] h-1/4 w-full cards_shadow  flex items-center justify-center'>
             <p data-aos="fade-up">Lorem ipsum dolor sit amet.</p>
           </div>
@@ -62,7 +62,7 @@ export default function Cards() {
         </div>
 
         <div className='h-full bg-slate-800 relative my_card_image'>
-          <img data-aos="fade-right" className='card_item_img absolute z-10' src={card1} onClick={() => handleClick()} alt="" />
+          <img data-aos="fade-left" className='card_item_img absolute z-10' src={card1} onClick={() => handleClick()} alt="" />
           <div className='absolute z-20 text-white top-[76%] text-center md:text-[40px] text-[20px] h-1/4 w-full cards_shadow  flex items-center justify-center'>
             <p data-aos="fade-up">Lorem ipsum dolor sit amet.</p>
           </div>

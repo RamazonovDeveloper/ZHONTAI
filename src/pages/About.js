@@ -31,7 +31,7 @@ function About({lang}) {
                         <p className='mt-2'>{about[lang].slide2_text2}</p>
                     </div>
                 </div>
-                <img  data-aos="fade-left" className='w-full' src={img2} alt="" />
+                <img  data-aos="fade-left" className='w-full' src={img2} alt="Solar panel image" />
                 <div className='h-100% flex items-center justify-center py-12 lg:py-0 lg:hidden'>
                     <div className='w-[80%]'>
                         <p>{about[lang].slide2_text1}</p>
@@ -40,7 +40,7 @@ function About({lang}) {
                 </div>
             </div>
             <div className='grid lg:grid-cols-2 grid-cols-1 grid-flow-row-dense'>
-                <img data-aos="fade-right" className='w-full' src={img1} alt="" />
+                <img data-aos="fade-right" className='w-full' src={img1} alt="Solar panel image" />
                 <div data-aos="fade-left" className='h-100% flex items-center justify-center py-12 lg:py-0'>
                     <div className='w-[80%]'>
                         <h2 className='font-bold text-[20px]'>{about[lang].slide3_title}</h2>
@@ -68,7 +68,7 @@ function About({lang}) {
                         <p className='mt-2'>{about[lang].slide5_text2}</p>
                     </div>
                 </div>
-                <img data-aos="fade-left" className='w-full' src={img3} alt="" />
+                <img data-aos="fade-left" className='w-full' src={img3} alt="Solar panel image" />
             </div>
             {/* <div className='grid grid-cols-2'>
                 <img className='w-full' src={img1} alt="" />

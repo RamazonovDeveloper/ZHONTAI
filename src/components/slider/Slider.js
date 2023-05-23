@@ -16,12 +16,9 @@ import main7 from '../../assets/main7.png'
 import main8 from '../../assets/main8.png'
 
 import './slider.css'
-import { gsap } from 'gsap';
 
 export default function Slider() {
 
-  gsap.to(".my_slider_text", { duration: 1, opacity: 1, y: -40})
-  
   useEffect(() => {
     AOS.init();
     AOS.refresh();
@@ -37,13 +34,13 @@ export default function Slider() {
             delay: 2500,
             disableOnInteraction: false,
         }}
-        modules={[Pagination, Autoplay]}
+        modules={[Pagination]}
         > 
         <SwiperSlide>
           <div className='relative w-full h-[100vh]'>
             <img src={main1} className='absolute h-[100vh] object-cover' alt="" />
             {/*  className='slider_an_text' */}
-            <div className='absolute my_slider_text w-full text-center h-[40%] text-white main_card_shadow px-2'>
+            <div className='absolute my_slider_text w-full text-center pt-5 pb-20 text-white main_card_shadow px-2'>
               <h2><span className='md:text-[50px] text-[40px]'>A Global Leader in Solar</span></h2>
               <p><span className='md:text-[40px] text-[30px]'>Industry-leading products and customer service worldwide, with a demonstrated commitment to sustainability. </span></p>
             </div>

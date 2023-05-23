@@ -21,7 +21,7 @@ export default function Partners() {
   return (
     <div className='container partners_section lg:h-[70vh] md:h-1/2  pt-[120px] pb-7'>
       <Swiper
-        slidesPerView={3}
+        // slidesPerView={3}
         spaceBetween={25}
         autoplay={{
             delay: 2500,

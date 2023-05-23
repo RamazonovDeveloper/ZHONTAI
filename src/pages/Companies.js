@@ -17,7 +17,7 @@ function Companies() {
             <p className='text-gray-600 mt-3'>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Soluta, beatae!</p>
           </div>
           <div>
-            <img className='rounded-xl' src={img1} alt="" />
+            <img className='rounded-xl' src={img1} alt="Our Partners Image" />
           </div>
         </div>
       </div>
