@@ -27,12 +27,12 @@ export default function Footer({lang}) {
                         </h3>
                         <div className='grid grid-cols-2'>
                             <div className='flex flex-col'>
-                                <a href="">- {footer[lang].link_1}</a>
-                                <a href="">- {footer[lang].link_2}</a>
+                                <a href="">{footer[lang].link_1}</a>
+                                <a href="">{footer[lang].link_2}</a>
                             </div>
                             <div className='flex flex-col'>
-                                <a href="">- {footer[lang].link_3}</a>
-                                <a href="">- {footer[lang].link_4}</a>
+                                <a href="">{footer[lang].link_3}</a>
+                                <a href="">{footer[lang].link_4}</a>
                             </div>
                         </div>
                     </div>

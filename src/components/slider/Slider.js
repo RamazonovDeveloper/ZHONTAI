@@ -4,9 +4,9 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 import AOS from "aos";
 import "aos/dist/aos.css";
 
-import { Pagination, Autoplay, Navigation } from "swiper";
+import { Pagination, Autoplay } from "swiper";
 
-import main1 from '../../assets/main1.png'
+import main1 from '../../assets/mainImageNewHuge.png'
 import main2 from '../../assets/main2.png'
 import main3 from '../../assets/main3.jpg'
 import main4 from '../../assets/main4.png'
@@ -34,7 +34,7 @@ export default function Slider() {
             delay: 2500,
             disableOnInteraction: false,
         }}
-        modules={[Pagination]}
+        modules={[Pagination, Autoplay]}
         > 
         <SwiperSlide>
           <div className='relative w-full h-[100vh]'>

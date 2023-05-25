@@ -53,7 +53,7 @@ export default function Navbar({setLang, lang}) {
             <div className={active ? `${nav_styles} left-0 h-[100vh] overflow-hidden` : `${nav_styles} left-[100%]`}>
                 <div className='flex flex-col lg:flex-row w-full lg:justify-between'>
                     <div className='mobile_logo py-7 w-full lg:hidden '>
-                      <img className='w-[150px] mx-auto cursor-pointer' src={logo} alt="" />
+                      <a href="/"><img className='w-[150px] mx-auto cursor-pointer' src={logo} alt="" /></a>
                     </div>
                     <div className='text-[25px] flex lg:flex-row flex-col lg:items-center px-0 lg:text-base'>
                       <IoIosCloseCircleOutline className='ml-auto mr-0 mt-5 mb-5 cursor-pointer lg:hidden' onClick={() => setActive(false)}/>
@@ -85,7 +85,7 @@ export default function Navbar({setLang, lang}) {
             </div>
             <p className='lg:hidden text-color_white cursor-pointer absolute ml-3 uppercase' onClick={() => setActive(true)}>{navbar[lang].link_8}</p>
             <div className='mx-auto'>
-                <a href="#"><img className='w-[200px]' src={logo} alt="" /></a>
+                <a href="/"><img className='w-[200px]' src={logo} alt="" /></a>
             </div>
         </div>
     </nav>

@@ -1,13 +1,41 @@
 
 .mySwiper{
-  /* margin-top: 0!important; */
   margin: auto;
-  /* margin-bottom: auto!important; */
 }
 
-.my_text_slider .swiper-slide{
+/* .my_text_slider .swiper-slide{
   height: fit-content!important;
+} */
+
+.my_products_slider .swiper-slide{
+  height: fit-content!important;
+  padding: 80px 0;
 }
+
+.my_products_image{
+  width: 70%!important;
+  height: unset!important;
+}
+
+
+@media screen and (max-width:800px) {
+  .my_text_slider_slide{
+    grid-template-columns: 1fr;
+    row-gap: 30px;
+  }
+
+  .my_products_image{
+    width: 50%!important;
+  }
+}
+
+@media screen and (max-width:600px) {
+  .my_products_image{
+    width: 70%!important;
+  }
+}
+
+
 
 /* @media screen and (max-width:680px) {
   .mySwiper{

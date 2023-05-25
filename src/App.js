@@ -22,6 +22,7 @@ import Advantages from './pages/Advantages';
 import Products from './pages/Products';
 import Contacts from './pages/Contacts';
 import Partners from './pages/Partners';
+import ProductsItem from './pages/ProductsItem';
 
 // const router = createBrowserRouter(
 //   createRoutesFromElements(
@@ -53,13 +54,14 @@ function App() {
   const router = createBrowserRouter(
     createRoutesFromElements(
       <Route path='/' element={<RootLayout setLang={setLang} lang={lang}/>}>
-        <Route index element={<Main/>}/>
+        <Route index element={<Main lang={lang}/>}/>
         <Route path='companies' element={<Companies/>}/>
         <Route path='about' element={<About lang={lang}/>}/>
         <Route path='advantages' element={<Advantages lang={lang}/>}/>
-        <Route path='products' element={<Products lang={lang}/>}/>
         <Route path='partners' element={<Partners/>}/>
         <Route path='contacts' element={<Contacts lang={lang}/>}/>
+        <Route path='products' element={<Products lang={lang}/>}/>
+        <Route path='products/:productId' element={<ProductsItem lang={lang} />}/>
       </Route>
     )
   )

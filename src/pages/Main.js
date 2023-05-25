@@ -5,7 +5,7 @@ import Text_slider from '../components/text_slider/Text_slider'
 import Cards from '../components/cards/Cards'
 import Footer from '../components/footer/Footer'
 
-export default function Main() {
+export default function Main({lang}) {
   return (
     <div className='w-full relative'>
 
@@ -16,7 +16,7 @@ export default function Main() {
         <Slider/>
 
         {/* SLIDER WITH TEXTS SETION */}
-        <Text_slider/>
+        <Text_slider lang={lang}/>
 
         {/* CARDS SECTION */}
         <Cards/>
