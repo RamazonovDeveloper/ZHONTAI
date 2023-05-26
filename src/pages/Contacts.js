@@ -55,7 +55,7 @@ export default function Contacts({lang}) {
                     <button className='contant_form_btn'>{contacts[lang].form_btn}</button>
                 </div>
                 <div>
-                <iframe className='w-full h-full min-h-[400px]' src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2995.783810252743!2d69.27246007530604!3d41.33531419922477!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x38ae8b454cf51035%3A0xc1f97becd64cf681!2z0JzQtdGH0LXRgtGMINCc0LjQvdC-0YA!5e0!3m2!1sru!2s!4v1684567038800!5m2!1sru!2s" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m13!1m8!1m3!1d7132.327894403744!2d69.23353692432698!3d41.270245984856246!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zNDHCsDE2JzExLjIiTiA2OcKwMTQnMTAuMSJF!5e0!3m2!1sru!2s!4v1685010750131!5m2!1sru!2s" style={{border:"0"}} width={"100%"} height={"350px"} allowFullScreen="" loading="lazy" referrerPolicy="no-referrer-when-downgrade"></iframe>
                 </div>
             </div>
 

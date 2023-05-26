@@ -6,7 +6,7 @@ import "aos/dist/aos.css";
 
 import { Pagination, Autoplay } from "swiper";
 
-import main1 from '../../assets/mainImageNewHuge.png'
+import main1 from '../../assets/mainImageNewHuge.jpg'
 import main2 from '../../assets/main2.png'
 import main3 from '../../assets/main3.jpg'
 import main4 from '../../assets/main4.png'

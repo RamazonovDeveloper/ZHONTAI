@@ -9,22 +9,35 @@ import { Swiper, SwiperSlide } from "swiper/react";
 
 import './partners.css'
 
-import partners1 from '../assets/partners2.png'
-import partners2 from '../assets/partners6.png'
-import partners3 from '../assets/partners7.png'
-import partners4 from '../assets/partners8.png'
-import partners5 from '../assets/partners3.png'
+import partners1 from '../assets/solis.png'
+import partners2 from '../assets/trina.png'
+// import partners3 from '../assets/partners7.png'
+// import partners4 from '../assets/partners8.png'
+// import partners5 from '../assets/partners3.png'
 
 
 
 export default function Partners() {
+
+  let lang = localStorage.getItem("lang")
+
+  console.log(lang);
+
   return (
-    <div className='container partners_section lg:h-[70vh] md:h-1/2  pt-[120px] pb-7'>
+    <div className='container partners_section  pt-[120px] pb-7'>
+      <h1 className='text-[40px] text-center'>
+        {
+          lang == "uz" ?
+          "Bizning hamkorlarimiz"
+          :
+          "Наши партнеры"
+        }
+      </h1>
       <Swiper
-        // slidesPerView={3}
+        slidesPerView={1}
         spaceBetween={25}
         autoplay={{
-            delay: 2500,
+            delay: 2000,
             disableOnInteraction: false,
         }}
         modules={[Autoplay]}
@@ -32,7 +45,7 @@ export default function Partners() {
       >
         <SwiperSlide><img src={partners1} alt="" /></SwiperSlide>
         <SwiperSlide><img src={partners2} alt="" /></SwiperSlide>
-        <SwiperSlide><img src={partners3} alt="" /></SwiperSlide>
+        {/* <SwiperSlide><img src={partners3} alt="" /></SwiperSlide>
         <SwiperSlide><img src={partners4} alt="" /></SwiperSlide>
         <SwiperSlide><img src={partners5} alt="" /></SwiperSlide>
         <SwiperSlide><img src={partners3} alt="" /></SwiperSlide>
@@ -43,7 +56,7 @@ export default function Partners() {
         <SwiperSlide><img src={partners1} alt="" /></SwiperSlide>
         <SwiperSlide><img src={partners2} alt="" /></SwiperSlide>
         <SwiperSlide><img src={partners3} alt="" /></SwiperSlide>
-        <SwiperSlide><img src={partners4} alt="" /></SwiperSlide>
+        <SwiperSlide><img src={partners4} alt="" /></SwiperSlide> */}
 
         {/* <SwiperSlide>IPOTEKA BANK</SwiperSlide>
         <SwiperSlide>ANOR BANK</SwiperSlide>
