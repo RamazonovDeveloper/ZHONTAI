@@ -5,7 +5,7 @@ import { productsItemsData } from '../languageData/ProductsItemsData'
 
 import "./productsItem.css"
 
-import {GrClose} from 'react-icons/gr'
+import { GrClose } from 'react-icons/gr'
 
 export default function ProductsItem({lang}) {
     const location = useLocation()

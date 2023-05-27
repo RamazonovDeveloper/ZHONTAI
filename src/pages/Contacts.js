@@ -28,21 +28,21 @@ export default function Contacts({lang}) {
                     <MdLocationPin className='text-[40px] text-color_blue mr-4'/>
                     <div>
                         <h3 className='text-[20px] font-semibold'>{contacts[lang].adress}</h3>
-                        <p className=''>O'zbekiston, Toshkent sh.</p>
+                        <p className=''>{contacts[lang].adress_text}</p>
                     </div>
                 </div>
                 <div className='contact_cards py-[15px] px-[15px] flex items-center'>
                     <MdPhoneInTalk className='text-[40px] text-color_blue mr-4'/>
                     <div>
                         <h3 className='text-[20px] font-semibold'>{contacts[lang].tel}</h3>
-                        <p className=''>+998 (77) 777-77-**</p>
+                        <a href='tel:+998918998888' className=''>+998 (91)-899-88-88</a>
                     </div>
                 </div>
                 <div className='contact_cards py-[15px] px-[15px] flex items-center'>
                     <MdEmail className='text-[40px] text-color_blue mr-4'/>
                     <div>
                         <h3 className='text-[20px] font-semibold'>{contacts[lang].message}</h3>
-                        <p className=''>tashkent.uz</p>
+                        <a href='mailto:info@zhontaisolar.com'>info@zhontaisolar.com</a>
                     </div>
                 </div>
             </div>
@@ -50,7 +50,7 @@ export default function Contacts({lang}) {
             <div className='my-[70px] grid lg:grid-cols-2 grid-cols-1 gap-5'>
                 <div className='flex flex-col'>
                     <input className='contact_form_input' type="text" placeholder={contacts[lang].form_name}/>
-                    <input className='contact_form_input' type="email" placeholder={contacts[lang].form_email}/>
+                    <input className='contact_form_input' type="tel" placeholder={contacts[lang].form_email}/>
                     <textarea className='contact_form_area' name="" id="" placeholder={contacts[lang].form_text} cols="0" rows="50"></textarea>
                     <button className='contant_form_btn'>{contacts[lang].form_btn}</button>
                 </div>

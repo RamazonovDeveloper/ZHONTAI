@@ -17,17 +17,22 @@
     background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.1) 0%,rgba(0, 0, 0, .3) 25%, rgba(0, 0, 0, 0.5) 50%, rgba(0, 0, 0, 0.6) 80%, rgba(0, 0, 0, 0.6) 90%, rgba(0, 0, 0, 0.7) 100%);
 }
 
-.my_card_image{
+/* .my_card_image,
+.card_item_img
+{
     transition: 1s ease-in-out;
-}
+} */
 
-.my_card_image:hover{
+.my_card_image:hover .card_item_img{
     transform: scale(1.05, 1.05);
+    transition: 1s ease-in-out;
+
 }
 
 .card_item_img{
     height: 100%;
     object-fit: cover;
+    transition: 1s ease-in-out;
 }
 
 @media screen and (min-width:500px) {

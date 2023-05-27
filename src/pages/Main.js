@@ -13,13 +13,13 @@ export default function Main({lang}) {
         {/* <Navbar/> */}
 
         {/* HERO SLIDER*/}
-        <Slider/>
+        <Slider lang={lang}/>
 
         {/* SLIDER WITH TEXTS SETION */}
         <Text_slider lang={lang}/>
 
         {/* CARDS SECTION */}
-        <Cards/>
+        <Cards lang={lang}/>
 
         {/* FOOTER */}
         {/* <Footer/> */}

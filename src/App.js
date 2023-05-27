@@ -55,7 +55,7 @@ function App() {
     createRoutesFromElements(
       <Route path='/' element={<RootLayout setLang={setLang} lang={lang}/>}>
         <Route index element={<Main lang={lang}/>}/>
-        <Route path='companies' element={<Companies/>}/>
+        <Route path='companies' element={<Companies lang={lang}/>}/>
         <Route path='about' element={<About lang={lang}/>}/>
         <Route path='advantages' element={<Advantages lang={lang}/>}/>
         <Route path='partners' element={<Partners/>}/>

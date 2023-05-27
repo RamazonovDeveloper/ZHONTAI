@@ -28,6 +28,9 @@
     background: white!important;
 }
 
+.my_slider_text{
+    
+}
 .slider_an_text span {
     display: block;
     animation: reveal 1.5s cubic-bezier(0.77, 0, 0.175, 1) 0.8s;

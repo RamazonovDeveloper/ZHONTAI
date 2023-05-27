@@ -1,0 +1,24 @@
+.products_usage_item{
+    position: relative;
+    /* transition: all .5s ease; */
+}
+
+.products_usage_item:hover .products_usage_item_shadow_in_products{
+    transform: translateY(100%);
+    transition: transform 1.1s ease;
+}
+/* 
+.products_usage_item:hover .products_usage_item_img{
+    transform: scale(1.1);
+    transition: 1s ease;
+} */
+
+.products_usage_item_shadow_in_products{
+    /* transition: .5s ease; */
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;   
+    background: #0000004f;
+}
