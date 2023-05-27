@@ -102,10 +102,10 @@ export default function Products({lang}) {
         <div className='container my-9'>
             <h2 className='text-[50px] text-blue-800 text-center'>25-70 kVt</h2>
             <ul className='grid md:grid-cols-4 gap-2 my-8 sm:grid-cols-2 grid-cols-1'>
-                <li data-aos="fade-up" className='bg-gray-300 rounded-md text-center mt-4 flex justify-center items-center p-4'>Kinotetr</li>
-                <li data-aos="fade-up" className='bg-gray-300 rounded-md text-center py-4'>Ishlab chiqarish sexlari</li>
-                <li data-aos="fade-up" className='bg-gray-300 rounded-md text-center sm:mt-6 mt-2 flex justify-center items-center p-4'>Maktablar</li>
-                <li data-aos="fade-up" className='bg-gray-300 rounded-md text-center mt-2 flex justify-center items-center p-4'>Kasalxonalar</li>
+                <li data-aos="fade-up" className='bg-gray-300 rounded-md text-center mt-4 flex justify-center items-center p-4'>{example[lang].kino}</li>
+                <li data-aos="fade-up" className='bg-gray-300 rounded-md text-center py-4'>{example[lang].firm}</li>
+                <li data-aos="fade-up" className='bg-gray-300 rounded-md text-center sm:mt-6 mt-2 flex justify-center items-center p-4'>{example[lang].school}</li>
+                <li data-aos="fade-up" className='bg-gray-300 rounded-md text-center mt-2 flex justify-center items-center p-4'>{example[lang].hospital}</li>
             </ul>
             <div className='grid md:grid-cols-2 grid-cols-1 gap-2'>
                 <div className='products_usage_item h-[270px] overflow-hidden'>

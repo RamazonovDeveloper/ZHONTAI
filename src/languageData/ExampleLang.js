@@ -12,6 +12,10 @@ export const example = {
         super:"Supermarket",
         home:"Axoli yashash xonadonlari",
         restoran:"Restoranlar",
+        kino:"Kinotetr",
+        firm:"Ishlab chiqarish sexlari",
+        school:"Maktablar",
+        hospital:"Kasalxonalar",
     },
     "ru":{
         meat_title:"Потребление Колбасного цеха на 50 Квт",
@@ -22,6 +26,10 @@ export const example = {
         super:"Супермаркет",
         home:"Жилые квартиры",
         restoran:"Рестораны",
+        kino:"Кино",
+        firm:"Производственные цеха",
+        school:"Школы",
+        hospital:"Больницы",
 
     }
 }
