@@ -45,11 +45,11 @@ export default function Products({lang}) {
 
         <Text_slider lang={lang}/>
 
-        <h1 className='text-center mt-8 text-[50px]'>Maxsulotlarning qo'llanilish soxasi</h1>
+        <h1 className='text-center mt-8 text-[50px]'>{example[lang].usage}</h1>
 
         <div className='container my-9'>
             <h2 className='text-[50px] text-blue-800 text-center'>100-3000 kVt</h2>
-            <h2 className='text-[50px] text-blue-800 text-center'>Barcha turdagi zavodlar uchun</h2>
+            <h2 className='text-[50px] text-blue-800 text-center'>{example[lang].factory}</h2>
             <div className='grid md:grid-cols-2 grid-cols-1 gap-2'>
                 <div className='products_usage_item h-[270px] overflow-hidden'>
                     <div className='products_usage_item_shadow_in_products'></div>
@@ -74,10 +74,10 @@ export default function Products({lang}) {
             <h2 className='text-[50px] text-blue-800 text-center'>3-20 kVt</h2>
             {/* <h2 className='text-[50px] text-blue-800 text-center'>Barcha turdagi zavodlar uchun</h2> */}
             <ul className='grid md:grid-cols-4 gap-2 my-8 sm:grid-cols-2 grid-cols-1'>
-                <li data-aos="fade-up" className='bg-gray-300 rounded-md text-center mt-4 flex justify-center items-center p-4'>Yonilg'i quyish shaxobchasi</li>
-                <li data-aos="fade-up" className='bg-gray-300 rounded-md text-center py-4'>Supermarketlar</li>
-                <li data-aos="fade-up" className='bg-gray-300 rounded-md text-center sm:mt-6 mt-2 flex justify-center items-center p-4'>Axoli yashash xonadonlari</li>
-                <li data-aos="fade-up" className='bg-gray-300 rounded-md text-center mt-2 flex justify-center items-center p-4'>Restoranlar</li>
+                <li data-aos="fade-up" className='bg-gray-300 rounded-md text-center mt-4 flex justify-center items-center p-4'>{example[lang].petrol}</li>
+                <li data-aos="fade-up" className='bg-gray-300 rounded-md text-center py-4'>{example[lang].super}</li>
+                <li data-aos="fade-up" className='bg-gray-300 rounded-md text-center sm:mt-6 mt-2 flex justify-center items-center p-4'>{example[lang].home}</li>
+                <li data-aos="fade-up" className='bg-gray-300 rounded-md text-center mt-2 flex justify-center items-center p-4'>{example[lang].restoran}</li>
             </ul>
             <div className='grid md:grid-cols-2 grid-cols-1 gap-2'>
                 <div className='products_usage_item h-[270px] overflow-hidden'>
