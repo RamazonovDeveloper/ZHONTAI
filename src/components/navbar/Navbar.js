@@ -52,7 +52,7 @@ export default function Navbar({setLang, lang}) {
         <div className='h-[90px] flex items-center justify-between'>
             <div className={active ? `${nav_styles} left-0 h-[100vh] overflow-hidden` : `${nav_styles} left-[100%]`}>
                 <div className='flex flex-col lg:flex-row w-full lg:justify-between'>
-                    <div className='mobile_logo py-7 w-full lg:hidden '>
+                    <div className='mobile_logo py-7 w-full lg:hidden'>
                       <a href="/"><img className='w-[150px] mx-auto cursor-pointer' src={logo} alt="" /></a>
                     </div>
                     <div className='text-[25px] flex lg:flex-row flex-col lg:items-center px-0 lg:text-base'>
@@ -66,16 +66,16 @@ export default function Navbar({setLang, lang}) {
                       <Link className='ml-8 uppercase' onClick={() => setActive(false)} to={'/products'}>{navbar[lang].link_5}</Link>
                       <Link className='ml-8 uppercase' onClick={() => setActive(false)} to={'/partners'}>{navbar[lang].link_6}</Link>
                       <Link className='ml-8 uppercase' onClick={() => setActive(false)} to={'/contacts'}>{navbar[lang].link_7}</Link>
-                      <div className="flex ml-8">
+                      <div className="flex ml-8 cursor-pointer">
                         <img
                           className={lang != "uz" ? "hidden" : "flex"}
-                          onClick={() => changeLang("ru")}
+                          onClick={() => {changeLang("ru");setActive(false)}}
                           src={bayroq}
                           alt="RuFlag"
                         />
                         <img
                           className={lang != "ru" ? "hidden" : "flex"}
-                          onClick={() => changeLang("uz")}
+                          onClick={() => {changeLang("uz");setActive(false)}}
                           src={flag}
                           alt="UzFlag"
                         />
@@ -83,9 +83,12 @@ export default function Navbar({setLang, lang}) {
                     </div>
                 </div>
             </div>
-            <p className='lg:hidden text-color_white cursor-pointer absolute ml-3 uppercase' onClick={() => setActive(true)}>{navbar[lang].link_8}</p>
-            <div className='mx-auto'>
+            <p className='salom_logo lg:hidden text-color_white cursor-pointer absolute ml-3 uppercase' onClick={() => setActive(true)}>{navbar[lang].link_8}</p>
+            <div className='w-[100vw] relative flex justify-center items-center'>
+              {/* <p className='w-fit mx-auto absolute z-40'>salom shox xursandman</p> */}
+              <div className={active ? 'absolute w-fit z-40 hidden transition' : 'absolute w-fit z-40'}>
                 <a href="/"><img className='w-[200px]' src={logo} alt="" /></a>
+              </div>
             </div>
         </div>
     </nav>

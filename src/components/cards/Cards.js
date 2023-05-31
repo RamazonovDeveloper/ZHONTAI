@@ -2,8 +2,8 @@ import React from 'react'
 
 import card1   from '../../assets/cardNewImg3.png'
 import card2   from '../../assets/cardNewImg1.png'
-import card3   from '../../assets/cardNewImg2.png'
-import card4   from '../../assets/cardImg3.jpg'
+import card3   from '../../assets/kons4.jpg'
+import card4   from '../../assets/cardNewImg2.png'
 
 import './cards.css'
 import { gsap } from 'gsap'

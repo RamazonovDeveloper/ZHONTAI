@@ -45,9 +45,9 @@ export default function Products({lang}) {
 
         <Text_slider lang={lang}/>
 
-        <h1 className='text-center mt-8 text-[50px]'>{example[lang].usage}</h1>
+        {/* <h1 className='text-center mt-8 text-[50px]'>{example[lang].usage}</h1> */}
 
-        <div className='container my-9'>
+        {/* <div className='container my-9'>
             <h2 className='text-[50px] text-blue-800 text-center'>100-3000 kVt</h2>
             <h2 className='text-[50px] text-blue-800 text-center'>{example[lang].factory}</h2>
             <div className='grid md:grid-cols-2 grid-cols-1 gap-2'>
@@ -72,7 +72,6 @@ export default function Products({lang}) {
 
         <div className='container my-9'>
             <h2 className='text-[50px] text-blue-800 text-center'>3-20 kVt</h2>
-            {/* <h2 className='text-[50px] text-blue-800 text-center'>Barcha turdagi zavodlar uchun</h2> */}
             <ul className='grid md:grid-cols-4 gap-2 my-8 sm:grid-cols-2 grid-cols-1'>
                 <li data-aos="fade-up" className='bg-gray-300 rounded-md text-center mt-4 flex justify-center items-center p-4'>{example[lang].petrol}</li>
                 <li data-aos="fade-up" className='bg-gray-300 rounded-md text-center py-4'>{example[lang].super}</li>
@@ -196,7 +195,7 @@ export default function Products({lang}) {
                 </div>
             </div>  
         </div>
-      </div>
+      </div> */}
 
     </div>
   )

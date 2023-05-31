@@ -5,6 +5,11 @@ import "aos/dist/aos.css";
 
 import {about} from '../languageData/AdvantagesLang'
 
+import kons1 from '../assets/kons1.jpg'
+import kons2 from '../assets/kons2.jpg'
+import kons3 from '../assets/kons5.jpg'
+
+import img1 from "../assets/img.png"
 import adv_img1 from '../assets/adv_image_1.png'
 import adv_img2 from '../assets/adv_image_2.png'
 import adv_img3 from '../assets/adv_image_3.png'
@@ -20,7 +25,7 @@ export default function Advantages({lang}) {
     AOS.init();
 
   return (
-    <div className='container'>
+    <div className='pt-28'>
         {/* <div className='pt-28'>
             <h1 className='text-4xl text-green-500 mb-3'>ON-GRID tizimi tarmoqli quyosh stansiyalarining afzalliklari:</h1>
             <ul className='list-disc pl-10'>
@@ -53,8 +58,51 @@ export default function Advantages({lang}) {
                 </div>
             </div>
         </div>   */}
+
+        <div className="container">
+            <h1 className='text-4xl mb-10'>{about[lang].last_adv_title}</h1>
+        </div>
+
+        <div className='grid lg:grid-cols-2 grid-cols-1 grid-flow-row-dense'>
+            <img data-aos="fade-right" className='w-full' src={kons2} alt="Solar panel image" />
+            <div data-aos="fade-left" className='h-100% flex items-center justify-center py-12 lg:py-0'>
+                <div className='w-[80%]'>
+                    <h2 className='font-bold text-[20px]'>{about[lang].slide3_title}</h2>
+                    <ul className='list-disc'>
+                        <li>{about[lang].slide3_li_1}</li>
+                        <li>{about[lang].slide3_li_2}</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div className='grid lg:grid-cols-2 grid-cols-1 grid-flow-row-dense'>
+            <div data-aos="fade-right" className='h-100% flex items-center justify-center py-12 lg:py-0'>
+                <div className='w-[80%]'>
+                    <h2 className='font-bold text-[20px]'>{about[lang].slide3_title}</h2>
+                    <ul className='list-disc'>
+                        <li>{about[lang].slide3_li_3}</li>
+                        <li>{about[lang].slide3_li_4}</li>
+                    </ul>
+                </div>
+            </div>
+            <img data-aos="fade-left" className='w-full' src={img1} alt="Solar panel image" />
+        </div>
+
+        <div className='grid lg:grid-cols-2 grid-cols-1 grid-flow-row-dense'>
+            <img data-aos="fade-right" className='w-full' src={kons3} alt="Solar panel image" />
+            <div data-aos="fade-left" className='h-100% flex items-center justify-center py-12 lg:py-0'>
+                <div className='w-[80%]'>
+                    <h2 className='font-bold text-[20px]'>{about[lang].slide3_title}</h2>
+                    <ul className='list-disc'>
+                        <li>{about[lang].slide3_li_5}</li>
+                        <li>{about[lang].slide3_li_6}</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
         
-        <div className='pt-28'>
+        <div className='container pt-14'>
             <h1 className='text-4xl text-green-500 mb-3'>{about[lang].adv1_title}</h1>
             <ul className='grid md:grid-cols-4 gap-2 my-8 sm:grid-cols-2 grid-cols-1'>
                 <li data-aos="fade-up" className='bg-gray-300 rounded-md text-center mt-4 flex justify-center items-center p-4'>{about[lang].adv1_text1}</li>
@@ -96,7 +144,7 @@ export default function Advantages({lang}) {
                 </div>
             </div>
         </div>
-        <div className=' md:pt-28 pt-10 md:pb-20 pb-12'>
+        <div className='container md:pt-28 pt-10 md:pb-20 pb-12'>
             <h1 className='text-4xl text-green-500 mb-3'>{about[lang].adv2_title}</h1>
             <ul className='grid md:grid-cols-4 gap-2 my-8 sm:grid-cols-2 grid-cols-1'>
                 <li data-aos="fade-up" className='bg-gray-300 rounded-md text-center mt-4 flex justify-center items-center p-4'>{about[lang].adv1_text1}</li>
@@ -133,7 +181,7 @@ export default function Advantages({lang}) {
             </div>
         </div>  
 
-        <div className=' md:pt-28 pt-10 md:pb-20 pb-12'>
+        <div className='container md:pt-28 pt-10 md:pb-20 pb-12'>
             <h1 className='text-4xl text-green-500 mb-3'>{about[lang].adv3_title}</h1>
             <ul className='grid md:grid-cols-4 gap-2 my-8 sm:grid-cols-2 grid-cols-1'>
                 <li data-aos="fade-up" className='bg-gray-300 rounded-md text-center mt-4 flex justify-center items-center p-4'>{about[lang].adv1_text1}</li>

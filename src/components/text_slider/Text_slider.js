@@ -51,7 +51,7 @@ return (
                     <div className='my-auto'>
                         <div className='md:pl-20 sm:pl-10  text-start'>
                             <p data-aos="fade-up" className='md:text-[40px] text-[30px]'>S5-GR3P(5-20)K</p>
-                            <p data-aos="fade-left" className='relative md:mb-7 mb-3'>
+                            <p data-aos="fade-left" className='relative md:mb-7 mb-3 mt-6'>
                                 {text_slider[lang].slide_1_text}
                             </p>
                             <Link to={"/products/S5-GR3P(5-20)K"} state={{productName:"S5-GR3P5K"}} className='flex items-center w-fit mx-auto md:ml-0 md:mr-auto'>
@@ -71,7 +71,7 @@ return (
                     <div className='my-auto'>
                         <div className='md:pl-20 sm:pl-10  text-start'>
                             <p data-aos="fade-up" className='md:text-[40px] text-[30px]'>S5-GR3P10K</p>
-                            <p data-aos="fade-left" className='relative md:mb-7 mb-3'>{text_slider[lang].slide_2_text}</p>
+                            <p data-aos="fade-left" className='relative md:mb-7 mb-3 mt-6'>{text_slider[lang].slide_2_text}</p>
                             <Link to={"/products/S5-GR3P10K"} state={{productName:"S5-GR3P10K"}} className='flex items-center w-fit mx-auto md:ml-0 md:mr-auto'>
                                 <a data-aos="fade-right" className='text-sm underline flex mr-2' href="#">READ MORE</a>
                                 <HiArrowLongRight/>
@@ -89,7 +89,7 @@ return (
                     <div className='my-auto'>
                         <div className='md:pl-20 sm:pl-10 text-start my_text_slider_slide_texts'>
                             <p data-aos="fade-up" className='md:text-[40px] text-[30px]'>S5-GR3P20K</p>
-                            <p data-aos="fade-left" className='relative md:mb-7 mb-3'>{text_slider[lang].slide_3_text}</p>
+                            <p data-aos="fade-left" className='relative md:mb-7 mb-3 mt-6'>{text_slider[lang].slide_3_text}</p>
                             <Link to={"/products/S5-GR3P20K"} state={{productName:"S5-GR3P20K"}} className='flex items-center w-fit mx-auto md:ml-0 md:mr-auto'>
                                 <a data-aos="fade-right" className='text-sm underline flex mr-2' href="#">READ MORE</a>
                                 <HiArrowLongRight/>
@@ -107,7 +107,7 @@ return (
                     <div className='my-auto'>
                         <div className='md:pl-20 sm:pl-10 text-start'>
                             <p data-aos="fade-up" className='md:text-[40px] text-[30px]'>S5-GC30K</p>
-                            <p data-aos="fade-left" className='relative md:mb-7 mb-3'>{text_slider[lang].slide_4_text}</p>
+                            <p data-aos="fade-left" className='relative md:mb-7 mb-3 mt-6'>{text_slider[lang].slide_4_text}</p>
                             <Link  to={"/products/S5-GC30K"} state={{productName:"S5-GC30K"}} className='flex items-center w-fit mx-auto md:ml-0 md:mr-auto'>
                                 <a data-aos="fade-right" className='text-sm underline flex mr-2' href="#">READ MORE</a>
                                 <HiArrowLongRight/>
@@ -125,7 +125,7 @@ return (
                     <div className='my-auto'>
                         <div className='md:pl-20 sm:pl-10 text-start'>
                             <p data-aos="fade-up" className='md:text-[40px] text-[30px]'>S5-GC40K</p>
-                            <p data-aos="fade-left" className='relative md:mb-7 mb-3'>{text_slider[lang].slide_5_text}</p>
+                            <p data-aos="fade-left" className='relative md:mb-7 mb-3 mt-6'>{text_slider[lang].slide_5_text}</p>
                             <Link to={"/products/S5-GC40K"} state={{productName:"S5-GC40K"}} className='flex items-center w-fit mx-auto md:ml-0 md:mr-auto'>
                                 <a data-aos="fade-right" className='text-sm underline flex mr-2' href="#">READ MORE</a>
                                 <HiArrowLongRight/>
@@ -144,7 +144,7 @@ return (
                     <div className='my-auto'>
                         <div className='md:pl-20 sm:pl-10 text-start'>
                             <p data-aos="fade-up" className='md:text-[40px] text-[30px]'>S5-GC50K</p>
-                            <p data-aos="fade-left" className='relative md:mb-7 mb-3'>{text_slider[lang].slide_6_text}</p>
+                            <p data-aos="fade-left" className='relative md:mb-7 mb-3 mt-6'>{text_slider[lang].slide_6_text}</p>
                             <Link to={"/products/S5-GC50K"} state={{productName:"S5-GC50K"}} className='flex items-center w-fit mx-auto md:ml-0 md:mr-auto'>
                                 <a data-aos="fade-right" className='text-sm underline flex mr-2' href="#">READ MORE</a>
                                 <HiArrowLongRight/>
@@ -163,7 +163,7 @@ return (
                     <div className='my-auto'>
                         <div className='md:pl-20 sm:pl-10 text-start'>
                             <p data-aos="fade-up" className='md:text-[40px] text-[30px]'>110K-5G</p>
-                            <p data-aos="fade-left" className='relative md:mb-7 mb-3'>{text_slider[lang].slide_7_text}</p>
+                            <p data-aos="fade-left" className='relative md:mb-7 mb-3 mt-6'>{text_slider[lang].slide_7_text}</p>
                             <Link to={"/products/110K-5G"} state={{productName:"110K-5G"}} className='flex items-center w-fit mx-auto md:ml-0 md:mr-auto'>
                                 <a data-aos="fade-right" className='text-sm underline flex mr-2' href="#">READ MORE</a>
                                 <HiArrowLongRight/>
@@ -182,7 +182,7 @@ return (
                     <div className='my-auto'>
                         <div className='md:pl-20 sm:pl-10 text-start'>
                             <p data-aos="fade-up" className='md:text-[40px] text-[30px]'>Trina solar 560 model</p>
-                            <p data-aos="fade-left" className='relative md:mb-7 mb-3'>{text_slider[lang].slide_8_text}</p>
+                            <p data-aos="fade-left" className='relative md:mb-7 mb-3 mt-6'>{text_slider[lang].slide_8_text}</p>
                             <Link to={"/products/Trina_solar_560_model"} state={{productName:"Trina_solar_560_model"}} className='flex items-center w-fit mx-auto md:ml-0 md:mr-auto'>
                                 <a data-aos="fade-right" className='text-sm underline flex mr-2' href="#">READ MORE</a>
                                 <HiArrowLongRight/>

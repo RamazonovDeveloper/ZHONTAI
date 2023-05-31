@@ -28,7 +28,7 @@ export default function ProductsItem({lang}) {
   return (
     <div>
 
-        {
+        {/* {
             openModal ?
             // bg-[rgba(200,200,200)]
                 <div  className='bg-[#00000043] w-[100vw] z-20 h-[100vh] fixed'>
@@ -40,7 +40,7 @@ export default function ProductsItem({lang}) {
                     </div>
                 </div>
             :""
-        }
+        } */}
 
         <div className='container pt-24'>
             

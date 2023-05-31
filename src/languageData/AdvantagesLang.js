@@ -15,6 +15,14 @@ export const about = {
         text_stansion:"ELEKTR TARMOQLARI",
         text_consumer:"ISTE’MOLCHI",
         text_accumlator:"AKKUMLATOR",
+
+        last_adv_title:"Bizning metall konstruktsiyamizning o'ziga xosligi",
+        slide3_li_1:"Umumiy konstruksiyaning yengilligi (alyuminiy profil, o'rnatiladigan obyektning sirt maydoniga strukturaning og'irligini kamaytiradi).",
+        slide3_li_2:"Bo'yashga (har yili emal bilan) hojat yo'q .",
+        slide3_li_3:"Korroziyaga chidamli.",
+        slide3_li_4:"20 yilga kafolat",
+        slide3_li_5:"Rux, magniy va alyuminiyni o'z ichiga oladi",
+        slide3_li_6:"Bardoshli va mustaxkam"
     },
     "ru":{
         adv1_title:"Преимущества сетевых солнечных станций системы ON-GRID:",
@@ -32,5 +40,13 @@ export const about = {
         text_stansion:"ЭЛЕКТРОСЕТЬ",
         text_consumer:"ПОТРЕБИТЕЛЬ",
         text_accumlator:"АККУМУЛЯТОР",
+
+        last_adv_title:"Уникальность нашей металлоконструкции",
+        slide3_li_1:"Легкость в весе (алюминиевый профиль, уменьшает вес конструкции на площадь поверхности устанавливаемого объекта)",
+        slide3_li_2:"Не нуждается в покраске (которую надо ежегодно покрывать эмалью)",
+        slide3_li_3:"Антикоррозийный",
+        slide3_li_4:"Гарантия на 20 лет",
+        slide3_li_5:"Включает в себя Цинк, Магний и Алюминий в составе",
+        slide3_li_6:"Износостойкий"
     },
 }
