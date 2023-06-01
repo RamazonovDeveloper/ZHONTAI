@@ -63,7 +63,7 @@ export default function Advantages({lang}) {
             <h1 className='text-4xl mb-10'>{about[lang].last_adv_title}</h1>
         </div>
 
-        <div className='grid lg:grid-cols-2 grid-cols-1 grid-flow-row-dense'>
+        {/* <div className='grid md:grid-cols-2 grid-cols-1 grid-flow-row-dense'>
             <img data-aos="fade-right" className='w-full' src={kons2} alt="Solar panel image" />
             <div data-aos="fade-left" className='h-100% flex items-center justify-center py-12 lg:py-0'>
                 <div className='w-[80%]'>
@@ -74,9 +74,9 @@ export default function Advantages({lang}) {
                     </ul>
                 </div>
             </div>
-        </div>
+        </div> */}
 
-        <div className='grid lg:grid-cols-2 grid-cols-1 grid-flow-row-dense'>
+        {/* <div className='md:grid md:grid-cols-2 flex flex-col-reverse'>
             <div data-aos="fade-right" className='h-100% flex items-center justify-center py-12 lg:py-0'>
                 <div className='w-[80%]'>
                     <h2 className='font-bold text-[20px]'>{about[lang].slide3_title}</h2>
@@ -87,9 +87,9 @@ export default function Advantages({lang}) {
                 </div>
             </div>
             <img data-aos="fade-left" className='w-full' src={img1} alt="Solar panel image" />
-        </div>
+        </div> */}
 
-        <div className='grid lg:grid-cols-2 grid-cols-1 grid-flow-row-dense'>
+        {/* <div className='grid md:grid-cols-2 grid-cols-1 grid-flow-row-dense'>
             <img data-aos="fade-right" className='w-full' src={kons3} alt="Solar panel image" />
             <div data-aos="fade-left" className='h-100% flex items-center justify-center py-12 lg:py-0'>
                 <div className='w-[80%]'>
@@ -100,8 +100,9 @@ export default function Advantages({lang}) {
                     </ul>
                 </div>
             </div>
-        </div>
+        </div> */}
         
+        {/* ADVANTAGES 1 */}
         <div className='container pt-14'>
             <h1 className='text-4xl text-green-500 mb-3'>{about[lang].adv1_title}</h1>
             <ul className='grid md:grid-cols-4 gap-2 my-8 sm:grid-cols-2 grid-cols-1'>
@@ -144,6 +145,8 @@ export default function Advantages({lang}) {
                 </div>
             </div>
         </div>
+
+        {/* ADVANTAGES 2 */}
         <div className='container md:pt-28 pt-10 md:pb-20 pb-12'>
             <h1 className='text-4xl text-green-500 mb-3'>{about[lang].adv2_title}</h1>
             <ul className='grid md:grid-cols-4 gap-2 my-8 sm:grid-cols-2 grid-cols-1'>
@@ -181,6 +184,7 @@ export default function Advantages({lang}) {
             </div>
         </div>  
 
+        {/* ADVANTAGES 3 */}
         <div className='container md:pt-28 pt-10 md:pb-20 pb-12'>
             <h1 className='text-4xl text-green-500 mb-3'>{about[lang].adv3_title}</h1>
             <ul className='grid md:grid-cols-4 gap-2 my-8 sm:grid-cols-2 grid-cols-1'>
@@ -215,7 +219,7 @@ export default function Advantages({lang}) {
                     </div>
                     
                 </div>
-                <div className='md:flex grid grid-cols-2 pt-12 md:pt-0'>
+                <div className='md:flex grid sm:grid-cols-2 pt-12 md:pt-0 grid-cols-1'>
                     {/* ACCUMULATOR IMAGE */}
                     <div data-aos="fade-right" className='relative w-fit flex items-center justify-center h-full md:mt-8 md:pl-10 lg:pl-16'>
                         <FiChevronsUp className='text-red-500 absolute -top-[20%] md:-top-[10%] left-[50%] lg:text-[50px] text-[40px]'/>
@@ -224,7 +228,7 @@ export default function Advantages({lang}) {
                         <p className='uppercase text-green-500 absolute top-[100%] font-semibold text-[20px]'>{about[lang].text_accumlator}</p>
                     </div>
                     {/* HOUSE IMAGE */}
-                    <div className='lg:ml-28 relative ml-10 sm:w-[70%] w-[100%] mt-10' data-aos="fade-up">
+                    <div className='lg:ml-28 relative sm:ml-10 sm:w-[70%] w-[100%] mt-10' data-aos="fade-up">
                         <FiChevronsDown className='text-red-500 absolute md:-top-[20%] -top-[40%] left-[40%] lg:text-[50px] text-[40px]'/>
                         <FiChevronsDown className='text-green-500 absolute md:-top-[20%] -top-[40%] left-[30%] lg:text-[50px] text-[40px]'/>
                         <img src={adv_img5} alt="House Image" />

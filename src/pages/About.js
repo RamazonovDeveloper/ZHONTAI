@@ -39,7 +39,7 @@ function About({lang}) {
                     </div>
                 </div>
             </div>
-            <div className='grid lg:grid-cols-2 grid-cols-1 grid-flow-row-dense'>
+            {/* <div className='grid lg:grid-cols-2 grid-cols-1 grid-flow-row-dense'>
                 <img data-aos="fade-right" className='w-full' src={img1} alt="Solar panel image" />
                 <div data-aos="fade-left" className='h-100% flex items-center justify-center py-12 lg:py-0'>
                     <div className='w-[80%]'>
@@ -51,7 +51,7 @@ function About({lang}) {
                         </ul>
                     </div>
                 </div>
-            </div>
+            </div> */}
         </div>
 
         <div className='about_capacity h-[85vh] flex items-end'>
