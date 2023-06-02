@@ -10,6 +10,7 @@ import kons2 from '../assets/kons2.jpg'
 import kons3 from '../assets/kons5.jpg'
 
 import img1 from "../assets/img.png"
+import img2 from "../assets/new_img.jpg"
 import adv_img1 from '../assets/adv_image_1.png'
 import adv_img2 from '../assets/adv_image_2.png'
 import adv_img3 from '../assets/adv_image_3.png'
@@ -59,26 +60,31 @@ export default function Advantages({lang}) {
             </div>
         </div>   */}
 
-        <div className="container">
-            <h1 className='md:text-4xl sm:text-2xl text-xl mb-10'>{about[lang].last_adv_title}</h1>
-        </div>
+        {/* <div className="container">
+            <h1 className='md:text-[40px] font-semibold sm:text-2xl text-xl mb-10'>{about[lang].last_adv_title}</h1>
+        </div> */}
 
         <div className='grid md:grid-cols-2 grid-cols-1'>
-            <img data-aos="fade-left" className='w-full' src={kons2} alt="Solar panel image" />
+            <img data-aos="fade-left" className='w-full' src={img1} alt="Solar panel image" />
             <div data-aos="fade-right" className='h-100% flex items-center justify-center py-12 lg:py-0'>
                 <div className='w-[80%]'>
-                    <h2 className='font-bold text-[20px]'>{about[lang].slide3_title}</h2>
+                    <h1 className='md:text-[40px] font-semibold sm:text-2xl text-xl mb-10'>{about[lang].last_adv_title}</h1>
+                    {/* <h2 className='font-bold text-[20px]'>{about[lang].slide3_title}</h2> */}
                     <ul className='list-disc'>
                         <li>{about[lang].slide3_li_1}</li>
                         <li>{about[lang].slide3_li_2}</li>
+                        <li>{about[lang].slide3_li_3}</li>
+                        <li>{about[lang].slide3_li_4}</li>
+                        <li>{about[lang].slide3_li_5}</li>
+                        <li>{about[lang].slide3_li_6}</li>
                     </ul>
                 </div>
             </div>
         </div>
 
         <div className='md:grid md:grid-cols-2 grid-cols-1'>
-            <img data-aos="fade-right" className='w-full flex md:hidden' src={img1} alt="Solar panel image" />
-            <div data-aos="fade-right" className='h-100% flex items-center justify-center py-12 lg:py-0'>
+            <img data-aos="fade-right" className='w-full flex' src={kons2} alt="Solar panel image" />
+            {/* <div data-aos="fade-right" className='h-100% flex items-center justify-center py-12 lg:py-0'>
                 <div className='w-[80%]'>
                     <h2 className='font-bold text-[20px]'>{about[lang].slide3_title}</h2>
                     <ul className='list-disc'>
@@ -86,11 +92,11 @@ export default function Advantages({lang}) {
                         <li>{about[lang].slide3_li_4}</li>
                     </ul>
                 </div>
-            </div>
-            <img data-aos="fade-right" className='w-full md:flex hidden' src={img1} alt="Solar panel image" />
+            </div> */}
+            <img data-aos="fade-right" className='w-full' src={img2} alt="Solar panel image" />
         </div>
 
-        <div className='grid md:grid-cols-2 grid-cols-1 grid-flow-row-dense'>
+        {/* <div className='grid md:grid-cols-2 grid-cols-1 grid-flow-row-dense'>
             <img data-aos="fade-right" className='w-full' src={kons3} alt="Solar panel image" />
             <div data-aos="fade-right" className='h-100% flex items-center justify-center py-12 lg:py-0'>
                 <div className='w-[80%]'>
@@ -101,7 +107,7 @@ export default function Advantages({lang}) {
                     </ul>
                 </div>
             </div>
-        </div>
+        </div> */}
         
         {/* ADVANTAGES 1 */}
         <div className=''>
@@ -222,6 +228,7 @@ export default function Advantages({lang}) {
                 <img data-aos="fade-right" className='flex items-center justify-center w-[70%] lg:w-full' src={adv_img4} alt="Electric Stansion Image" />
                 <p className='uppercase text-green-500 absolute top-[100%] lg:left-[50%] left-[20%] font-semibold text-[20px]'>{about[lang].text_stansion}</p>
               </div>
+            
             </div>
 
             <div className='md:flex grid md:grid-cols-2 pt-12 md:pt-0 grid-cols-1'>

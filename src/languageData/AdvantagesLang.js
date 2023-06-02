@@ -16,7 +16,7 @@ export const about = {
         text_consumer:"ISTE’MOLCHI",
         text_accumlator:"AKKUMLATOR",
 
-        last_adv_title:"Bizning metall konstruktsiyamizning o'ziga xosligi",
+        last_adv_title:"Metall konstruktsiya",
         slide3_li_1:"Umumiy konstruksiyaning yengilligi (alyuminiy profil, o'rnatiladigan obyektning sirt maydoniga strukturaning og'irligini kamaytiradi).",
         slide3_li_2:"Bo'yashga (har yili emal bilan) hojat yo'q .",
         slide3_li_3:"Korroziyaga chidamli.",
@@ -41,7 +41,7 @@ export const about = {
         text_consumer:"ПОТРЕБИТЕЛЬ",
         text_accumlator:"АККУМУЛЯТОР",
 
-        last_adv_title:"Уникальность нашей металлоконструкции",
+        last_adv_title:"Металлоконструкция",
         slide3_li_1:"Легкость в весе (алюминиевый профиль, уменьшает вес конструкции на площадь поверхности устанавливаемого объекта)",
         slide3_li_2:"Не нуждается в покраске (которую надо ежегодно покрывать эмалью)",
         slide3_li_3:"Антикоррозийный",
