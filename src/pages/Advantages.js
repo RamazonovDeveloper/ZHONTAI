@@ -126,7 +126,7 @@ export default function Advantages({lang}) {
                             <FiChevronsRight className='text-green-500 absolute top-[40%] lg:-right-14 -right-6 lg:text-[50px] text-[40px]'/>
                             <p className='uppercase text-green-500 absolute md:top-[70%] font-semibold text-[20px] top-[80%]'>{about[lang].text_invertor}</p>
                         </div>
-                        <div data-aos="fade-right" className='relative w-fit flex items-center justify-center h-full'>
+                        <div data-aos="fade-right" className='relative w-fit flex items-center justify-center h-full mt-6 md:mt-0'>
                             <img src={adv_img3} className='w-[70%] lg:w-full' alt="Counter Image" />    
                             <FiChevronsRight className='text-green-500 absolute top-[40%] lg:-right-20 -right-10 lg:text-[50px] text-[40px]'/>
                             <FiChevronsLeft className=' text-red-500 absolute top-[55%] lg:-right-20 -right-10 lg:text-[50px] text-[40px]'/>
@@ -172,7 +172,7 @@ export default function Advantages({lang}) {
                         <p className='uppercase text-green-500 absolute  md:top-[80%] lg:top-[90%] font-semibold text-[20px] top-[80%]'>{about[lang].text_invertor}</p>
                     </div>
                     {/* ACCUMULATOR IMAGE */}
-                    <div data-aos="fade-right" className='relative w-fit flex items-center justify-center h-full mt-8 md:pl-10 lg:pl-16'>
+                    <div data-aos="fade-right" className='relative w-fit flex items-center justify-center h-full mt-10 md:pl-10 lg:pl-16'>
                         <img src={adv_img6} className='w-[85%] ' alt="Accumulator Image" />    
                         <p className='uppercase text-green-500 absolute top-[90%] font-semibold text-[20px]'>{about[lang].text_accumlator}</p>
                     </div>
@@ -210,7 +210,8 @@ export default function Advantages({lang}) {
                 <FiChevronsRight className='text-green-500 absolute top-[40%] lg:-right-14 -right-6 lg:text-[50px] text-[40px]'/>
                 <p className='uppercase text-green-500 absolute md:top-[70%] font-semibold text-[20px] top-[80%]'>{about[lang].text_invertor}</p>
               </div>
-              <div data-aos="fade-right" className='relative w-fit flex items-center justify-center h-full'>
+
+              <div data-aos="fade-right" className='relative w-fit flex items-center justify-center h-full mt-6 md:mt-0'>
                 <img src={adv_img3} className='w-[70%] lg:w-full' alt="Counter Image" />    
                 <FiChevronsRight className='text-green-500 absolute top-[40%] lg:-right-20 -right-10 lg:text-[50px] text-[40px]'/>
                 <FiChevronsLeft className=' text-red-500 absolute top-[55%] lg:-right-20 -right-10 lg:text-[50px] text-[40px]'/>
@@ -226,8 +227,8 @@ export default function Advantages({lang}) {
             <div className='md:flex grid md:grid-cols-2 pt-12 md:pt-0 grid-cols-1'>
               {/* ACCUMULATOR IMAGE */}
               <div data-aos="fade-right" className='relative w-fit flex items-center justify-center h-full md:mt-8 md:pl-10 lg:pl-16'>
-                <FiChevronsUp className='text-red-500 absolute -top-[40%] md:-top-[10%] left-[50%] lg:text-[50px] text-[40px]'/>
-                <FiChevronsDown className='text-green-500 absolute -top-[40%] md:-top-[10%] left-[30%] lg:text-[50px] text-[40px]'/>
+                <FiChevronsUp className='text-red-500 absolute -top-[40%] md:-top-[0%] left-[50%] lg:text-[50px] text-[40px]'/>
+                <FiChevronsDown className='text-green-500 absolute -top-[40%] md:-top-[0%] left-[30%] lg:text-[50px] text-[40px]'/>
                 <img src={adv_img6} className='w-[85%] md:mt-12' alt="Accumulator Image" />    
                 <p className='uppercase text-green-500 absolute top-[100%] font-semibold text-[20px]'>{about[lang].text_accumlator}</p>
               </div>
