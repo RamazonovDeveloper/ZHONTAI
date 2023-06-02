@@ -14,7 +14,7 @@ export default function Contacts({lang}) {
     <div>
         <div className='contact_title w-full h-[50vh]'>
             <div className='contact_title_item flex h-full items-center justify-center '>
-                <h1 className='text-[40px] text-white font-semibold'>{contacts[lang].contacts_title}</h1>
+                <h1 className='text-[40px] text-center w-fit text-white font-semibold'>{contacts[lang].contacts_title}</h1>
             </div>
         </div>
 

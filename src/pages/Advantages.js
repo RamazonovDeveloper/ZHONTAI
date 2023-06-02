@@ -60,12 +60,12 @@ export default function Advantages({lang}) {
         </div>   */}
 
         <div className="container">
-            <h1 className='text-4xl mb-10'>{about[lang].last_adv_title}</h1>
+            <h1 className='md:text-4xl sm:text-2xl text-xl mb-10'>{about[lang].last_adv_title}</h1>
         </div>
 
-        {/* <div className='grid md:grid-cols-2 grid-cols-1 grid-flow-row-dense'>
-            <img data-aos="fade-right" className='w-full' src={kons2} alt="Solar panel image" />
-            <div data-aos="fade-left" className='h-100% flex items-center justify-center py-12 lg:py-0'>
+        <div className='grid md:grid-cols-2 grid-cols-1'>
+            <img data-aos="fade-left" className='w-full' src={kons2} alt="Solar panel image" />
+            <div data-aos="fade-right" className='h-100% flex items-center justify-center py-12 lg:py-0'>
                 <div className='w-[80%]'>
                     <h2 className='font-bold text-[20px]'>{about[lang].slide3_title}</h2>
                     <ul className='list-disc'>
@@ -74,9 +74,10 @@ export default function Advantages({lang}) {
                     </ul>
                 </div>
             </div>
-        </div> */}
+        </div>
 
-        {/* <div className='md:grid md:grid-cols-2 flex flex-col-reverse'>
+        <div className='md:grid md:grid-cols-2 grid-cols-1'>
+            <img data-aos="fade-right" className='w-full flex md:hidden' src={img1} alt="Solar panel image" />
             <div data-aos="fade-right" className='h-100% flex items-center justify-center py-12 lg:py-0'>
                 <div className='w-[80%]'>
                     <h2 className='font-bold text-[20px]'>{about[lang].slide3_title}</h2>
@@ -86,12 +87,12 @@ export default function Advantages({lang}) {
                     </ul>
                 </div>
             </div>
-            <img data-aos="fade-left" className='w-full' src={img1} alt="Solar panel image" />
-        </div> */}
+            <img data-aos="fade-right" className='w-full md:flex hidden' src={img1} alt="Solar panel image" />
+        </div>
 
-        {/* <div className='grid md:grid-cols-2 grid-cols-1 grid-flow-row-dense'>
+        <div className='grid md:grid-cols-2 grid-cols-1 grid-flow-row-dense'>
             <img data-aos="fade-right" className='w-full' src={kons3} alt="Solar panel image" />
-            <div data-aos="fade-left" className='h-100% flex items-center justify-center py-12 lg:py-0'>
+            <div data-aos="fade-right" className='h-100% flex items-center justify-center py-12 lg:py-0'>
                 <div className='w-[80%]'>
                     <h2 className='font-bold text-[20px]'>{about[lang].slide3_title}</h2>
                     <ul className='list-disc'>
@@ -100,52 +101,54 @@ export default function Advantages({lang}) {
                     </ul>
                 </div>
             </div>
-        </div> */}
+        </div>
         
         {/* ADVANTAGES 1 */}
-        <div className='container pt-14'>
-            <h1 className='text-4xl text-green-500 mb-3'>{about[lang].adv1_title}</h1>
-            <ul className='grid md:grid-cols-4 gap-2 my-8 sm:grid-cols-2 grid-cols-1'>
-                <li data-aos="fade-up" className='bg-gray-300 rounded-md text-center mt-4 flex justify-center items-center p-4'>{about[lang].adv1_text1}</li>
-                <li data-aos="fade-up" className='bg-gray-300 rounded-md text-center py-4'>{about[lang].adv1_text2}</li>
-                <li data-aos="fade-up" className='bg-gray-300 rounded-md text-center sm:mt-6 mt-2 flex justify-center items-center p-4'>{about[lang].adv1_text3}</li>
-                <li data-aos="fade-up" className='bg-gray-300 rounded-md text-center mt-2 flex justify-center items-center p-4'>{about[lang].adv1_text4}</li>
-            </ul>
-            <div className='py-5'>
-                <div className='grid md:grid-cols-4 grid-cols-2 gap-5 sm:gap-0'>
-                    <div  data-aos="fade-right" className='relative w-fit flex items-center justify-center h-full '>
-                        <img src={adv_img1} className='w-[70%] lg:w-full' alt="Solar Panel Image" />
-                        <FiChevronsRight className='text-green-500 absolute top-[40%] lg:-right-14 md:-right-10 -right-8 lg:text-[50px] text-[40px]'/>
-                        <p className='uppercase text-green-500 absolute md:top-[95%] lg:top-[90%] font-semibold text-[20px] top-[100%]'>{about[lang].text_solar}</p>
+        <div className=''>
+            <div className='container pt-14 pb-10'>
+                <h1 className='md:text-4xl sm:text-2xl text-xl text-green-500 mb-3'>{about[lang].adv1_title}</h1>
+                <ul className='grid md:grid-cols-4 gap-2 my-8 sm:grid-cols-2 grid-cols-1'>
+                    <li data-aos="fade-up" className='text-base bg-gray-300 rounded-md text-center mt-4 flex justify-center items-center p-4'>{about[lang].adv1_text1}</li>
+                    <li data-aos="fade-up" className='text-base bg-gray-300 rounded-md text-center py-4'>{about[lang].adv1_text2}</li>
+                    <li data-aos="fade-up" className='text-base bg-gray-300 rounded-md text-center sm:mt-6 mt-2 flex justify-center items-center p-4'>{about[lang].adv1_text3}</li>
+                    <li data-aos="fade-up" className='text-base bg-gray-300 rounded-md text-center mt-2 flex justify-center items-center p-4'>{about[lang].adv1_text4}</li>
+                </ul>
+                <div className='py-5'>
+                    <div className='grid md:grid-cols-4 grid-cols-2 gap-5 sm:gap-0'>
+                        <div  data-aos="fade-right" className='relative w-fit flex items-center justify-center h-full '>
+                            <img src={adv_img1} className='w-[70%] lg:w-full' alt="Solar Panel Image" />
+                            <FiChevronsRight className='text-green-500 absolute top-[40%] lg:-right-14 md:-right-10 -right-8 lg:text-[50px] text-[40px]'/>
+                            <p className='uppercase text-green-500 absolute md:top-[95%] lg:top-[90%] font-semibold text-[20px] top-[100%]'>{about[lang].text_solar}</p>
+                        </div>
+                        {/* INVERTOR IMAGE */}
+                        <div data-aos="fade-right" className='relative w-[80%] flex items-center justify-center h-full pl-5 lg:pl-0'>
+                            <img src={adv_img2} className='w-[70%] lg:w-full' alt="Invertor Image" />
+                            <FiChevronsRight className='text-green-500 absolute top-[40%] lg:-right-14 -right-6 lg:text-[50px] text-[40px]'/>
+                            <p className='uppercase text-green-500 absolute md:top-[70%] font-semibold text-[20px] top-[80%]'>{about[lang].text_invertor}</p>
+                        </div>
+                        <div data-aos="fade-right" className='relative w-fit flex items-center justify-center h-full'>
+                            <img src={adv_img3} className='w-[70%] lg:w-full' alt="Counter Image" />    
+                            <FiChevronsRight className='text-green-500 absolute top-[40%] lg:-right-20 -right-10 lg:text-[50px] text-[40px]'/>
+                            <FiChevronsLeft className=' text-red-500 absolute top-[55%] lg:-right-20 -right-10 lg:text-[50px] text-[40px]'/>
+                            <p className='uppercase text-green-500 absolute top-[80%] font-semibold text-[20px]'>{about[lang].text_counter}</p>
+                        </div>
+                        {/* ELECTRIC STANSION */}
+                        <div className='relative'>
+                            <img data-aos="fade-right" className='flex items-center justify-center w-[70%] lg:w-full' src={adv_img4} alt="Electric Stansion Image" />
+                            <p className='uppercase text-green-500 absolute top-[100%] lg:left-[50%] left-[20%] font-semibold text-[20px]'>{about[lang].text_stansion}</p>
+                        </div>
                     </div>
-                    {/* INVERTOR IMAGE */}
-                    <div data-aos="fade-right" className='relative w-[80%] flex items-center justify-center h-full pl-5 lg:pl-0'>
-                        <img src={adv_img2} className='w-[70%] lg:w-full' alt="Invertor Image" />
-                        <FiChevronsRight className='text-green-500 absolute top-[40%] lg:-right-14 -right-6 lg:text-[50px] text-[40px]'/>
-                        <p className='uppercase text-green-500 absolute md:top-[70%] font-semibold text-[20px] top-[80%]'>{about[lang].text_invertor}</p>
+                    {/* HOUSE IMAGE */}
+                    <div className='lg:ml-28 relative ml-10 w-[70%] mt-10' data-aos="fade-up">
+                        <FiChevronsUp className='text-red-500 absolute -top-[20%] left-[40%] lg:text-[50px] text-[40px]'/>
+                        <FiChevronsDown className='text-green-500 absolute -top-[20%] left-[25%] lg:text-[50px] text-[40px]'/>
+                        <img src={adv_img5} alt="House Image" />
+                        <p className='uppercase text-green-500 absolute md:top-[95%] left-[20%] font-semibold text-[20px] top-[100%]'>{about[lang].text_consumer}</p>
                     </div>
-                    <div data-aos="fade-right" className='relative w-fit flex items-center justify-center h-full'>
-                        <img src={adv_img3} className='w-[70%] lg:w-full' alt="Counter Image" />    
-                        <FiChevronsRight className='text-green-500 absolute top-[40%] lg:-right-20 -right-10 lg:text-[50px] text-[40px]'/>
-                        <FiChevronsLeft className=' text-red-500 absolute top-[55%] lg:-right-20 -right-10 lg:text-[50px] text-[40px]'/>
-                        <p className='uppercase text-green-500 absolute top-[80%] font-semibold text-[20px]'>{about[lang].text_counter}</p>
-                    </div>
-                    {/* ELECTRIC STANSION */}
-                    <div className='relative'>
-                        <img data-aos="fade-left" className='flex items-center justify-center w-[70%] lg:w-full' src={adv_img4} alt="Electric Stansion Image" />
-                        <p className='uppercase text-green-500 absolute top-[100%] lg:left-[50%] left-[20%] font-semibold text-[20px]'>{about[lang].text_stansion}</p>
-                    </div>
-                </div>
-                {/* HOUSE IMAGE */}
-                <div className='lg:ml-28 relative ml-10 w-[70%] mt-10' data-aos="fade-up">
-                    <FiChevronsUp className='text-red-500 absolute -top-[20%] left-[40%] lg:text-[50px] text-[40px]'/>
-                    <FiChevronsDown className='text-green-500 absolute -top-[20%] left-[25%] lg:text-[50px] text-[40px]'/>
-                    <img src={adv_img5} alt="House Image" />
-                    <p className='uppercase text-green-500 absolute md:top-[95%] left-[20%] font-semibold text-[20px] top-[100%]'>{about[lang].text_consumer}</p>
                 </div>
             </div>
         </div>
-
+        
         {/* ADVANTAGES 2 */}
         <div className='container md:pt-28 pt-10 md:pb-20 pb-12'>
             <h1 className='text-4xl text-green-500 mb-3'>{about[lang].adv2_title}</h1>
@@ -182,60 +185,61 @@ export default function Advantages({lang}) {
                     <p className='uppercase text-green-500 absolute md:top-[95%] left-[20%] font-semibold text-[20px] top-[100%]'>{about[lang].text_consumer}</p>
                 </div>
             </div>
-        </div>  
+        </div> 
 
+        
         {/* ADVANTAGES 3 */}
         <div className='container md:pt-28 pt-10 md:pb-20 pb-12'>
-            <h1 className='text-4xl text-green-500 mb-3'>{about[lang].adv3_title}</h1>
-            <ul className='grid md:grid-cols-4 gap-2 my-8 sm:grid-cols-2 grid-cols-1'>
-                <li data-aos="fade-up" className='bg-gray-300 rounded-md text-center mt-4 flex justify-center items-center p-4'>{about[lang].adv1_text1}</li>
-                <li data-aos="fade-up" className='bg-gray-300 rounded-md text-center py-4'>{about[lang].adv1_text2}</li>
-                <li data-aos="fade-up" className='bg-gray-300 rounded-md text-center sm:mt-6 mt-2 flex justify-center items-center p-4'>{about[lang].adv1_text3}</li>
-                <li data-aos="fade-up" className='bg-gray-300 rounded-md text-center mt-2 flex justify-center items-center p-4'>{about[lang].adv1_text4}</li>
-            </ul>
-            <div className='py-5'>
-                <div className='grid md:grid-cols-4 grid-cols-2 gap-5 sm:gap-0'>
-                    <div  data-aos="fade-right" className='relative w-fit flex items-center justify-center h-full '>
-                        <img src={adv_img1} className='w-[70%] lg:w-full' alt="Solar Panel Image" />
-                        <FiChevronsRight className='text-green-500 absolute top-[40%] lg:-right-14 md:-right-10 -right-8 lg:text-[50px] text-[40px]'/>
-                        <p className='uppercase text-green-500 absolute md:top-[95%] lg:top-[90%] font-semibold text-[20px] top-[100%]'>{about[lang].text_solar}</p>
-                    </div>
-                    {/* INVERTOR IMAGE */}
-                    <div data-aos="fade-right" className='relative w-[80%] flex items-center justify-center h-full pl-5 lg:pl-0'>
-                        <img src={adv_img2} className='w-[70%] lg:w-full' alt="Invertor Image" />
-                        <FiChevronsRight className='text-green-500 absolute top-[40%] lg:-right-14 -right-6 lg:text-[50px] text-[40px]'/>
-                        <p className='uppercase text-green-500 absolute md:top-[70%] font-semibold text-[20px] top-[80%]'>{about[lang].text_invertor}</p>
-                    </div>
-                    <div data-aos="fade-right" className='relative w-fit flex items-center justify-center h-full'>
-                        <img src={adv_img3} className='w-[70%] lg:w-full' alt="Counter Image" />    
-                        <FiChevronsRight className='text-green-500 absolute top-[40%] lg:-right-20 -right-10 lg:text-[50px] text-[40px]'/>
-                        <FiChevronsLeft className=' text-red-500 absolute top-[55%] lg:-right-20 -right-10 lg:text-[50px] text-[40px]'/>
-                        <p className='uppercase text-green-500 absolute top-[80%] font-semibold text-[20px]'>{about[lang].text_counter}</p>
-                    </div>
-                    {/* ELECTRIC STANSION */}
-                    <div className='relative'>
-                        <img data-aos="fade-left" className='flex items-center justify-center w-[70%] lg:w-full' src={adv_img4} alt="Electric Stansion Image" />
-                        <p className='uppercase text-green-500 absolute top-[100%] lg:left-[50%] left-[20%] font-semibold text-[20px]'>{about[lang].text_stansion}</p>
-                    </div>
-                    
-                </div>
-                <div className='md:flex grid sm:grid-cols-2 pt-12 md:pt-0 grid-cols-1'>
-                    {/* ACCUMULATOR IMAGE */}
-                    <div data-aos="fade-right" className='relative w-fit flex items-center justify-center h-full md:mt-8 md:pl-10 lg:pl-16'>
-                        <FiChevronsUp className='text-red-500 absolute -top-[20%] md:-top-[10%] left-[50%] lg:text-[50px] text-[40px]'/>
-                        <FiChevronsDown className='text-green-500 absolute -top-[20%] md:-top-[10%] left-[30%] lg:text-[50px] text-[40px]'/>
-                        <img src={adv_img6} className='w-[85%] md:mt-12' alt="Accumulator Image" />    
-                        <p className='uppercase text-green-500 absolute top-[100%] font-semibold text-[20px]'>{about[lang].text_accumlator}</p>
-                    </div>
-                    {/* HOUSE IMAGE */}
-                    <div className='lg:ml-28 relative sm:ml-10 sm:w-[70%] w-[100%] mt-10' data-aos="fade-up">
-                        <FiChevronsDown className='text-red-500 absolute md:-top-[20%] -top-[40%] left-[40%] lg:text-[50px] text-[40px]'/>
-                        <FiChevronsDown className='text-green-500 absolute md:-top-[20%] -top-[40%] left-[30%] lg:text-[50px] text-[40px]'/>
-                        <img src={adv_img5} alt="House Image" />
-                        <p className='uppercase text-green-500 absolute md:top-[95%] left-[20%] font-semibold text-[20px] top-[100%]'>{about[lang].text_consumer}</p>
-                    </div>
-                </div>
+          <h1 className='text-4xl text-green-500 mb-3'>{about[lang].adv3_title}</h1>
+          <ul className='grid md:grid-cols-4 gap-2 my-8 sm:grid-cols-2 grid-cols-1'>
+            <li data-aos="fade-up" className='bg-gray-300 rounded-md text-center mt-4 flex justify-center items-center p-4'>{about[lang].adv1_text1}</li>
+            <li data-aos="fade-up" className='bg-gray-300 rounded-md text-center py-4'>{about[lang].adv1_text2}</li>
+            <li data-aos="fade-up" className='bg-gray-300 rounded-md text-center sm:mt-6 mt-2 flex justify-center items-center p-4'>{about[lang].adv1_text3}</li>
+            <li data-aos="fade-up" className='bg-gray-300 rounded-md text-center mt-2 flex justify-center items-center p-4'>{about[lang].adv1_text4}</li>
+          </ul>
+          <div className='py-5'>
+            <div className='grid md:grid-cols-4 grid-cols-2 gap-5 sm:gap-0'>
+              <div  data-aos="fade-right" className='relative w-fit flex items-center justify-center h-full '>
+                <img src={adv_img1} className='w-[70%] lg:w-full' alt="Solar Panel Image" />
+                <FiChevronsRight className='text-green-500 absolute top-[40%] lg:-right-14 md:-right-10 -right-8 lg:text-[50px] text-[40px]'/>
+                <p className='uppercase text-green-500 absolute md:top-[95%] lg:top-[90%] font-semibold text-[20px] top-[100%]'>{about[lang].text_solar}</p>
+              </div>
+              {/* INVERTOR IMAGE */}
+              <div data-aos="fade-right" className='relative w-[80%] flex items-center justify-center h-full pl-5 lg:pl-0'>
+                <img src={adv_img2} className='w-[70%] lg:w-full' alt="Invertor Image" />
+                <FiChevronsRight className='text-green-500 absolute top-[40%] lg:-right-14 -right-6 lg:text-[50px] text-[40px]'/>
+                <p className='uppercase text-green-500 absolute md:top-[70%] font-semibold text-[20px] top-[80%]'>{about[lang].text_invertor}</p>
+              </div>
+              <div data-aos="fade-right" className='relative w-fit flex items-center justify-center h-full'>
+                <img src={adv_img3} className='w-[70%] lg:w-full' alt="Counter Image" />    
+                <FiChevronsRight className='text-green-500 absolute top-[40%] lg:-right-20 -right-10 lg:text-[50px] text-[40px]'/>
+                <FiChevronsLeft className=' text-red-500 absolute top-[55%] lg:-right-20 -right-10 lg:text-[50px] text-[40px]'/>
+                <p className='uppercase text-green-500 absolute top-[80%] font-semibold text-[20px]'>{about[lang].text_counter}</p>
+              </div>
+              {/* ELECTRIC STANSION */}
+              <div className='relative'>
+                <img data-aos="fade-right" className='flex items-center justify-center w-[70%] lg:w-full' src={adv_img4} alt="Electric Stansion Image" />
+                <p className='uppercase text-green-500 absolute top-[100%] lg:left-[50%] left-[20%] font-semibold text-[20px]'>{about[lang].text_stansion}</p>
+              </div>
             </div>
+
+            <div className='md:flex grid md:grid-cols-2 pt-12 md:pt-0 grid-cols-1'>
+              {/* ACCUMULATOR IMAGE */}
+              <div data-aos="fade-right" className='relative w-fit flex items-center justify-center h-full md:mt-8 md:pl-10 lg:pl-16'>
+                <FiChevronsUp className='text-red-500 absolute -top-[20%] md:-top-[10%] left-[50%] lg:text-[50px] text-[40px]'/>
+                <FiChevronsDown className='text-green-500 absolute -top-[20%] md:-top-[10%] left-[30%] lg:text-[50px] text-[40px]'/>
+                <img src={adv_img6} className='w-[85%] md:mt-12' alt="Accumulator Image" />    
+                <p className='uppercase text-green-500 absolute top-[100%] font-semibold text-[20px]'>{about[lang].text_accumlator}</p>
+              </div>
+              {/* HOUSE IMAGE */}
+              <div className='lg:ml-28 relative sm:ml-10 sm:w-[70%] w-[100%] mt-10' data-aos="fade-up">
+                <FiChevronsDown className='text-red-500 absolute md:-top-[20%] -top-[40%] left-[40%] lg:text-[50px] text-[40px]'/>
+                <FiChevronsDown className='text-green-500 absolute md:-top-[20%] -top-[40%] left-[30%] lg:text-[50px] text-[40px]'/>
+                <img src={adv_img5} alt="House Image" />
+                <p className='uppercase text-green-500 absolute md:top-[95%] left-[20%] font-semibold text-[20px] top-[100%]'>{about[lang].text_consumer}</p>
+              </div>
+            </div>
+          </div>
         </div>
         
     </div>
