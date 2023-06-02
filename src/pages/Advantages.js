@@ -226,15 +226,15 @@ export default function Advantages({lang}) {
             <div className='md:flex grid md:grid-cols-2 pt-12 md:pt-0 grid-cols-1'>
               {/* ACCUMULATOR IMAGE */}
               <div data-aos="fade-right" className='relative w-fit flex items-center justify-center h-full md:mt-8 md:pl-10 lg:pl-16'>
-                <FiChevronsUp className='text-red-500 absolute -top-[20%] md:-top-[10%] left-[50%] lg:text-[50px] text-[40px]'/>
-                <FiChevronsDown className='text-green-500 absolute -top-[20%] md:-top-[10%] left-[30%] lg:text-[50px] text-[40px]'/>
+                <FiChevronsUp className='text-red-500 absolute -top-[40%] md:-top-[10%] left-[50%] lg:text-[50px] text-[40px]'/>
+                <FiChevronsDown className='text-green-500 absolute -top-[40%] md:-top-[10%] left-[30%] lg:text-[50px] text-[40px]'/>
                 <img src={adv_img6} className='w-[85%] md:mt-12' alt="Accumulator Image" />    
                 <p className='uppercase text-green-500 absolute top-[100%] font-semibold text-[20px]'>{about[lang].text_accumlator}</p>
               </div>
               {/* HOUSE IMAGE */}
-              <div className='lg:ml-28 relative sm:ml-10 sm:w-[70%] w-[100%] mt-10' data-aos="fade-up">
-                <FiChevronsDown className='text-red-500 absolute md:-top-[20%] -top-[40%] left-[40%] lg:text-[50px] text-[40px]'/>
-                <FiChevronsDown className='text-green-500 absolute md:-top-[20%] -top-[40%] left-[30%] lg:text-[50px] text-[40px]'/>
+              <div className='lg:ml-28 relative sm:ml-10 sm:w-[70%] w-[100%] mt-10 pt-4 md:pt-0' data-aos="fade-up">
+                <FiChevronsDown className='text-red-500 absolute md:-top-[20%] -top-[10%] left-[40%] lg:text-[50px] text-[40px]'/>
+                <FiChevronsDown className='text-green-500 absolute md:-top-[20%] -top-[10%] left-[30%] lg:text-[50px] text-[40px]'/>
                 <img src={adv_img5} alt="House Image" />
                 <p className='uppercase text-green-500 absolute md:top-[95%] left-[20%] font-semibold text-[20px] top-[100%]'>{about[lang].text_consumer}</p>
               </div>
