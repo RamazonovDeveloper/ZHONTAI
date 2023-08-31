@@ -64,6 +64,7 @@ function About({lang}) {
             <div className='grid lg:grid-cols-2 grid-cols-1'>
                 <div data-aos="fade-right" className='h-100% flex items-center justify-center py-12 lg:py-0'>
                     <div className='w-[80%]'>
+                        <h2 className='font-semibold text-[30px] mb-3'>{about[lang].slide5_title}</h2>
                         <p>{about[lang].slide5_text1}</p>
                         <p className='mt-2'>{about[lang].slide5_text2}</p>
                     </div>

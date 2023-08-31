@@ -37,7 +37,7 @@ export default function Cards({lang}) {
 
         <div className='h-full relative my_card_image overflow-hidden'>
           <img data-aos="fade-right" className='card_item_img absolute z-0' src={card1} alt="" />
-          <div className='absolute z-10 w-[100%] text-white bottom-0 left-0 lg:text-[42px] lg:leading-[50px] text-[30px] leading-10 cards_shadow py-4 px-3 flex items-center justify-center'>
+          <div className='absolute z-10 w-[100%] text-white bottom-0 left-0 lg:text-[42px] lg:leading-[50px] text-[30px] leading-10 cards_shadow py-4 px-3 flex items-center'>
             <p data-aos="fade-up">{cardsLang[lang].slide1}</p>
           </div>
         </div>
@@ -54,14 +54,14 @@ export default function Cards({lang}) {
 
       <div className='h-full relative my_card_image overflow-hidden'>
         <img data-aos="fade-right" className='card_item_img absolute z-0' src={card3} alt="" />
-        <div className='absolute z-10 w-[100%] text-white bottom-0 left-0 lg:text-[42px] lg:leading-[50px] text-[30px]  leading-10 cards_shadow py-4 px-3 flex items-center justify-center'>
+        <div className='absolute z-10 w-[100%] text-white bottom-0 left-0 lg:text-[42px] lg:leading-[50px] text-[30px]  leading-10 cards_shadow py-4 px-3 flex items-center'>
           <p data-aos="fade-up">{cardsLang[lang].slide3}</p>
         </div>
       </div>
 
       <div className='h-full relative my_card_image overflow-hidden'>
         <img data-aos="fade-right" className='card_item_img absolute z-0' src={card4} alt="" />
-        <div className='absolute z-10 w-[100%] text-white bottom-0 left-0 lg:text-[42px] text-[30px] cards_shadow py-4 px-3 flex items-center justify-center'>
+        <div className='absolute z-10 w-[100%] text-white bottom-0 left-0 lg:text-[42px] text-[30px] cards_shadow py-4 px-3 flex items-center'>
           <p data-aos="fade-up">{cardsLang[lang].slide4}</p>
         </div>
       </div>

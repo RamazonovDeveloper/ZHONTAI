@@ -12,7 +12,7 @@ import "aos/dist/aos.css";
 import BeatLoader from "react-spinners/BeatLoader";
 
 
-import { Route, RouterProvider, Routes, createBrowserRouter, createRoutesFromElements } from 'react-router-dom';
+import { Route, RouterProvider, createBrowserRouter, createRoutesFromElements } from 'react-router-dom';
 import Main from './pages/Main';
 import Companies from './pages/Companies';
 import About from './pages/About';
@@ -40,11 +40,11 @@ import ProductsItem from './pages/ProductsItem';
 
 function App() {
   
-  const identifyLang = localStorage.getItem('lang')
+  let identifyLang = localStorage.getItem('lang')
 
   if (!identifyLang) {
-    localStorage.setItem("lang", "uz")
-    identifyLang = "uz"
+    localStorage.setItem("lang", "ru")
+    identifyLang = "ru"
   }
 
   const [lang, setLang] = useState(identifyLang)
