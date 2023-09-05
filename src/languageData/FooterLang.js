@@ -7,7 +7,8 @@ export const footer = {
         link_2:"Afzalliklar",
         link_3:"Mahsulotlar",
         link_4:"Hamkorlar",
-        sec_3_text:"Bizni ijtimoiy tarmoqlarda ham kuzatib boring va yangiliklardan xabardor bo'ling"
+        sec_3_text:"Bizni ijtimoiy tarmoqlarda ham kuzatib boring va yangiliklardan xabardor bo'ling",
+        tel:"Tel :"
     },
     "ru":{
         sec_1_title:"Солнечные электростанции – технологии будущего",
@@ -17,6 +18,7 @@ export const footer = {
         link_2:"Преимущества",
         link_3:"Продукция",
         link_4:"Партнёры",
-        sec_3_text:"Следите за нами в социальных сетях и будьте в курсе"
+        sec_3_text:"Следите за нами в социальных сетях и будьте в курсе",
+        tel:"Тел :"
     }
 }

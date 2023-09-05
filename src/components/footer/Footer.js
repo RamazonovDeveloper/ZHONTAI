@@ -38,8 +38,9 @@ export default function Footer({lang}) {
                     </div>
                     <div>
                         <h3 className='text-[30px] font-semibold mb-[30px] mt-[20px] lg:mt-0'>{footer[lang].sec_3_title}</h3>
+                        <a className='flex mb-[5px]' href='tel:+998918998888'>{footer[lang].tel} +998918998888</a>
                         <p className='text-[#fffa]'>{footer[lang].sec_3_text}</p>
-                        <div className='flex mt-5'>
+                        <div className='flex mt-3'>
                             <a className='network' href="#">
                                 <FaFacebookF className='text-white'/>
                             </a>
