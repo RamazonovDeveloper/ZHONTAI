@@ -23,6 +23,7 @@ import Products from './pages/Products';
 import Contacts from './pages/Contacts';
 import Partners from './pages/Partners';
 import ProductsItem from './pages/ProductsItem';
+import OurWorks from './pages/OurWorks';
 
 // const router = createBrowserRouter(
 //   createRoutesFromElements(
@@ -61,6 +62,7 @@ function App() {
         <Route path='partners' element={<Partners/>}/>
         <Route path='contacts' element={<Contacts lang={lang}/>}/>
         <Route path='products' element={<Products lang={lang}/>}/>
+        <Route path='our_works' element={<OurWorks lang={lang}/>}/>
         <Route path='products/:productId' element={<ProductsItem lang={lang} />}/>
       </Route>
     )

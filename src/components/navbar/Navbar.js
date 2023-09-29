@@ -63,6 +63,7 @@ export default function Navbar({setLang, lang}) {
                       <Link className='ml-8 uppercase' onClick={() => setActive(false)} to={'/advantages'}>{navbar[lang].link_4}</Link>
                     </div>
                     <div className='text-[25px] flex lg:flex-row mr-4 flex-col lg:items-center px-0 lg:text-base'>
+                      <Link className='ml-8 uppercase' onClick={() => setActive(false)} to={'/our_works'}>{navbar[lang].link_9}</Link>
                       <Link className='ml-8 uppercase' onClick={() => setActive(false)} to={'/products'}>{navbar[lang].link_5}</Link>
                       <Link className='ml-8 uppercase' onClick={() => setActive(false)} to={'/partners'}>{navbar[lang].link_6}</Link>
                       <Link className='ml-8 uppercase' onClick={() => setActive(false)} to={'/contacts'}>{navbar[lang].link_7}</Link>
