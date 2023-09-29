@@ -13,8 +13,8 @@ import img5 from "../assets/7.Сергели дом 2.jpg";
 import img6 from "../assets/5. Крембер 2.jpg";
 import img7 from "../assets/5 1.jpg";
 
-import img8 from '../assets/3.Частный дом 2.jpg'
-import img9 from '../assets/3.Частный дом.jpg'
+import img8 from "../assets/3.Частный дом 2.jpg";
+import img9 from "../assets/3.Частный дом.jpg";
 
 export default function OurWorks({ lang }) {
   return (
@@ -47,10 +47,10 @@ export default function OurWorks({ lang }) {
         <div className="w-4/5 grid lg:grid-cols-2 grid-cols-1">
           <div
             data-aos="fade-right"
-            className="h-100% items-center justify-center py-12 lg:py-0 hidden lg:flex"
+            className="h-100% items-center justify-center py-12 lg:py-0"
           >
-            <div className="w-[80%]">
-              <p className="text-[20px]">{works[lang].text3}</p>
+            <div className="">
+              <p className="text-[20px] text-center">{works[lang].text3}</p>
             </div>
           </div>
           <img
@@ -59,20 +59,23 @@ export default function OurWorks({ lang }) {
             src={img5}
             alt="Solar panel image"
           />
-          <div className="h-100% flex items-center justify-center py-12 lg:py-0 lg:hidden">
+          {/* <div className="h-100% flex items-center justify-center py-12 lg:py-0 lg:hidden">
             <div className="w-[80%]">
               <p>{works[lang].text3}</p>
               <p className="mt-2">{works[lang].text2}</p>
             </div>
-          </div>
+          </div> */}
         </div>
       </div>
 
       <div className="flex justify-center items-center mb-9">
         <div className="mt-[40px] grid lg:grid-cols-2 grid-cols-1 w-4/5 gap-7">
+          <h3 className="text-center text-[20px] md:hidden" data-aos="fade-bottom ">
+            {works[lang].text5}
+          </h3>
           <img className="rounded-lg" data-aos="fade-right" src={img7} alt="" />
           <div className="flex flex-col justify-around">
-            <h3 className="text-center text-[20px]" data-aos="fade-bottom ">
+            <h3 className="text-center text-[20px] hidden md:flex" data-aos="fade-bottom ">
               {works[lang].text5}
             </h3>
             <img
