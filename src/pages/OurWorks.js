@@ -8,7 +8,7 @@ import img2 from "../assets/4.миллий таомлар 2.jpg";
 import img3 from "../assets/2.Рузметов.jpg";
 import img4 from "../assets/2.Рузметов 2.jpg";
 
-import img5 from "../assets/7.Сергели дом 2.jpg";
+import img5 from "../assets/sergeli uy.jpg";
 
 import img6 from "../assets/5. Крембер 2.jpg";
 import img7 from "../assets/5 1.jpg";
@@ -49,7 +49,7 @@ export default function OurWorks({ lang }) {
             data-aos="fade-right"
             className="h-100% items-center justify-center py-12 lg:py-0"
           >
-            <div className="">
+            <div className="flex items-center h-full">
               <p className="text-[20px] text-center">{works[lang].text3}</p>
             </div>
           </div>
